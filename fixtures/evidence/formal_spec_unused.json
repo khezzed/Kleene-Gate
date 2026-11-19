@@ -1,0 +1,7 @@
+{
+  "release": "v3.4.0",
+  "document_type": "formal_verification_report",
+  "verifier": "ProofForge Symbolic Engine",
+  "verification_status": "PASSED",
+  "summary": "Formal verification for release v3.4.0 PASSED all safety invariants with zero counterexamples found."
+}

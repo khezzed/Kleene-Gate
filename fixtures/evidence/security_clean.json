@@ -1,0 +1,9 @@
+{
+  "release": "v3.4.0",
+  "document_type": "security_incident_bulletin",
+  "issuer": "Incident Response Board",
+  "active_key_compromise": false,
+  "confirmed_critical_exploit": false,
+  "halt_advisory_active": false,
+  "summary": "Security verification for release v3.4.0 explicitly confirms NO active signing-key compromise and NO critical exploit exists."
+}
