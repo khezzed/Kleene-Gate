@@ -1,6 +1,6 @@
 {
-  "project": "KleeneGate \u2014 3-Valued Kleene Predicate Circuit with Active-Frontier Short-Circuit Pruning",
-  "generated_at_utc": "2026-11-19T21:46:43.242556+00:00",
+  "project": "KleeneGate \u2014 3-Valued Kleene Predicate Circuit with Possibility-Interval Pruning",
+  "generated_at_utc": "2026-11-20T09:09:25.078674+00:00",
   "network": {
     "name": "studionet",
     "chain_id": 61999,
@@ -11,10 +11,10 @@
     "repository_url": "https://github.com/khezzed/Kleene-Gate",
     "contract_path": "contracts/kleene_gate.py",
     "probe_contract_path": "contracts/probe_runner.py",
-    "deployed_commit_sha": "11ad896b4fbe929f9fbaf418e8e6ad22901c0eaf",
-    "git_blob_sha1": "e9ddd120dfdec5f1cc1fc471a87fb4b55c09ecd0",
+    "deployed_commit_sha": "52831faaaf7875638ce686f0e3caf23a64e72d06",
+    "git_blob_sha1": "3382d3b1761588df9b8891f62bb24b2a0493349a",
     "probe_git_blob_sha1": "8ef3126dcd357c8d13e6b074857f9c38165d171c",
-    "byte_length": 50705,
+    "byte_length": 45417,
     "line_endings": "LF",
     "runner_header": "# { \"Depends\": \"py-genlayer:1jb45aa8ynh2a9c9xn3b7qqh8sm5q93hwfp7jqmwsfhh8jpz09h6\" }"
   },
@@ -26,70 +26,70 @@
   },
   "evidence_fixtures": [
     {
-      "file": "audit_failed.json",
-      "url": "https://raw.githubusercontent.com/khezzed/Kleene-Gate/11ad896b4fbe929f9fbaf418e8e6ad22901c0eaf/fixtures/evidence/audit_failed.json",
+      "file": "audit_report_v340.md",
+      "url": "https://raw.githubusercontent.com/khezzed/Kleene-Gate/52831faaaf7875638ce686f0e3caf23a64e72d06/fixtures/evidence/audit_report_v340.md",
       "http_status": 200,
-      "raw_bytes": 349,
-      "sha256": "70e31836e49f541bb5708465e8a7d50e7e5de359f8c4af3439274c1f4e06340d"
+      "raw_bytes": 913,
+      "sha256": "8cbcb44ca0e1ec96730a385a69aff0171e0c931236eaf7f44aa58eeb4f129b60"
     },
     {
-      "file": "formal_spec_unused.json",
-      "url": "https://raw.githubusercontent.com/khezzed/Kleene-Gate/11ad896b4fbe929f9fbaf418e8e6ad22901c0eaf/fixtures/evidence/formal_spec_unused.json",
+      "file": "formal_verification_v340.md",
+      "url": "https://raw.githubusercontent.com/khezzed/Kleene-Gate/52831faaaf7875638ce686f0e3caf23a64e72d06/fixtures/evidence/formal_verification_v340.md",
       "http_status": 200,
-      "raw_bytes": 271,
-      "sha256": "54e6559faf22a4187603f7f9680ea646631c6a26dc8e61f61b798cba9c36160c"
+      "raw_bytes": 340,
+      "sha256": "164bed7b29da3f7964c3d685144c2bd3475aeddeb1d70c0d8dafaf2ad77d1602"
     },
     {
-      "file": "review_alpha_pass.json",
-      "url": "https://raw.githubusercontent.com/khezzed/Kleene-Gate/11ad896b4fbe929f9fbaf418e8e6ad22901c0eaf/fixtures/evidence/review_alpha_pass.json",
+      "file": "review_alpha_v340.md",
+      "url": "https://raw.githubusercontent.com/khezzed/Kleene-Gate/52831faaaf7875638ce686f0e3caf23a64e72d06/fixtures/evidence/review_alpha_v340.md",
       "http_status": 200,
-      "raw_bytes": 356,
-      "sha256": "5692682821f83ba825ca72d1935f1413b4a5fb974d3e8c8bdca678fe1d13f0cb"
+      "raw_bytes": 546,
+      "sha256": "74d6cbb0ef112b0ad640ff9edd8d077e6d02c066310bb294a884e00fa4ecd6b4"
     },
     {
-      "file": "review_beta_pass.json",
-      "url": "https://raw.githubusercontent.com/khezzed/Kleene-Gate/11ad896b4fbe929f9fbaf418e8e6ad22901c0eaf/fixtures/evidence/review_beta_pass.json",
+      "file": "review_beta_v340.md",
+      "url": "https://raw.githubusercontent.com/khezzed/Kleene-Gate/52831faaaf7875638ce686f0e3caf23a64e72d06/fixtures/evidence/review_beta_v340.md",
       "http_status": 200,
-      "raw_bytes": 362,
-      "sha256": "94053188735d240338a4445ec157775701b0f81c87a4b55e948da2d85c65d8d6"
+      "raw_bytes": 556,
+      "sha256": "0cee222f2a4de4d2930b5aba003069662b78eb6022f542bcf979abd4ade7539a"
     },
     {
-      "file": "review_gamma_unused.json",
-      "url": "https://raw.githubusercontent.com/khezzed/Kleene-Gate/11ad896b4fbe929f9fbaf418e8e6ad22901c0eaf/fixtures/evidence/review_gamma_unused.json",
+      "file": "review_gamma_v340.md",
+      "url": "https://raw.githubusercontent.com/khezzed/Kleene-Gate/52831faaaf7875638ce686f0e3caf23a64e72d06/fixtures/evidence/review_gamma_v340.md",
       "http_status": 200,
-      "raw_bytes": 276,
-      "sha256": "c7aada8b85e39a0c2e3b9e23d08ad612c548c8f84cd0d25e7840242f705ce492"
+      "raw_bytes": 343,
+      "sha256": "32fc2c7b3f1aee5539a639b19cd904fcbd6259fe9afd17a9e889bca49d3df04a"
     },
     {
-      "file": "security_clean.json",
-      "url": "https://raw.githubusercontent.com/khezzed/Kleene-Gate/11ad896b4fbe929f9fbaf418e8e6ad22901c0eaf/fixtures/evidence/security_clean.json",
+      "file": "security_bulletin_v340.md",
+      "url": "https://raw.githubusercontent.com/khezzed/Kleene-Gate/52831faaaf7875638ce686f0e3caf23a64e72d06/fixtures/evidence/security_bulletin_v340.md",
       "http_status": 200,
-      "raw_bytes": 362,
-      "sha256": "bb338a1f08f1e47932a827fa8023cb4a4cef3ef0186b6557c4935fb9e6a57378"
+      "raw_bytes": 729,
+      "sha256": "2411d050068e265414c9eef946e2c378ddab85acadcc01cae38dca240bbd6983"
     },
     {
-      "file": "security_compromise.json",
-      "url": "https://raw.githubusercontent.com/khezzed/Kleene-Gate/11ad896b4fbe929f9fbaf418e8e6ad22901c0eaf/fixtures/evidence/security_compromise.json",
+      "file": "security_bulletin_v341.md",
+      "url": "https://raw.githubusercontent.com/khezzed/Kleene-Gate/52831faaaf7875638ce686f0e3caf23a64e72d06/fixtures/evidence/security_bulletin_v341.md",
       "http_status": 200,
-      "raw_bytes": 377,
-      "sha256": "bbab128bb3bf538bbd0a26ce4b601f2a0711a2ad4307cb951e3417567fcffafa"
+      "raw_bytes": 594,
+      "sha256": "2dbe62048e71481182ba4e246c761d4597879e6d8a064bef796dec6110d064d9"
     },
     {
-      "file": "security_ambiguous_injection.json",
-      "url": "https://raw.githubusercontent.com/khezzed/Kleene-Gate/11ad896b4fbe929f9fbaf418e8e6ad22901c0eaf/fixtures/evidence/security_ambiguous_injection.json",
+      "file": "runner_maintenance_note.md",
+      "url": "https://raw.githubusercontent.com/khezzed/Kleene-Gate/52831faaaf7875638ce686f0e3caf23a64e72d06/fixtures/evidence/runner_maintenance_note.md",
       "http_status": 200,
-      "raw_bytes": 322,
-      "sha256": "26844a6dd1068ade60305ca77793399ef84d08d757d23eca1b570e55de73fcbd"
+      "raw_bytes": 758,
+      "sha256": "78257d51a7aee2c92425dbe69cb6d021ff8c7a1fd2aed0c17ca5b418ac89404d"
     }
   ],
   "deployment": {
-    "probe_contract_address": "0xf3385681906f6cc8a9c8b3A516A6Df422577B8F4",
-    "probe_explorer_url": "https://explorer-studio.genlayer.com/address/0xf3385681906f6cc8a9c8b3A516A6Df422577B8F4",
-    "contract_address": "0x9522F74765b9f7aC3Baeee56d9aDd0fCb4219Ff6",
-    "explorer_contract_url": "https://explorer-studio.genlayer.com/address/0x9522F74765b9f7aC3Baeee56d9aDd0fCb4219Ff6",
-    "sponsor_address": "0xD0D15b39e05C37e8673b0C9fA053fe3a38218ac6",
-    "beneficiary_address": "0xe4725DAD686EA2bbc413b6Fe636c5f7650F4cf8b",
-    "stranger_address": "0x09C5E82453cD0fe969D95c04AAc15F4cB1FE3195",
+    "probe_contract_address": "0x62da1E17b2e352860823a8fc58b2fb9D8D4d7E54",
+    "probe_explorer_url": "https://explorer-studio.genlayer.com/address/0x62da1E17b2e352860823a8fc58b2fb9D8D4d7E54",
+    "contract_address": "0x971D12518fA6fC01D62D12c7a99ad4b748802aCf",
+    "explorer_contract_url": "https://explorer-studio.genlayer.com/address/0x971D12518fA6fC01D62D12c7a99ad4b748802aCf",
+    "sponsor_address": "0x445Ff6bD81Cf71C14Fe5f133bE1Ce65e8dE1E22a",
+    "beneficiary_address": "0xb592c0Ae1Fa87aE334a7776b59310E5ad2e695a5",
+    "stranger_address": "0xe716662a121D6d1d7B48dc0C16c5f1306FB3729a",
     "constructor_args": [
       [
         "raw.githubusercontent.com"
@@ -99,58 +99,67 @@
   "transactions": [
     {
       "label": "P1: deploy_probe_runner",
-      "tx_hash": "0xb1304875b055e5fca7aa2fa472eefbc01fee00b61458841e2d1f112ce5e89d2c",
-      "explorer_url": "https://explorer-studio.genlayer.com/transactions/0xb1304875b055e5fca7aa2fa472eefbc01fee00b61458841e2d1f112ce5e89d2c",
+      "tx_hash": "0xd1e825607eb88973e0737e17d757eaf50eb2e1b4c59511aee8dc1f1a9c8bdde3",
+      "explorer_url": "https://explorer-studio.genlayer.com/transactions/0xd1e825607eb88973e0737e17d757eaf50eb2e1b4c59511aee8dc1f1a9c8bdde3",
       "expected_failure": false,
       "status_name": "FINALIZED",
       "leader_execution_result": "SUCCESS",
       "leader_error": null,
+      "eq_outputs_count": 0,
       "votes": {
-        "0x22Eda431B7fBC1216baE3b077a78c973a8719c58": "agree",
-        "0x240d2d7c8DF220110c26cfFFC532479319Cca0dC": "idle",
-        "0x62718FbDf0509A398aA525C152D60c1F7A9d33D3": "idle",
-        "0x88E148Da14d45c5a5DD2DB25E776eBCBCe0Df539": "agree",
-        "0xE74a9088aD4d6dBf3C8cABcC0B91072d2a8c8afa": "agree"
+        "0x23A15A452F19D1B616276fedC5B8B51d69082959": "agree",
+        "0x240d2d7c8DF220110c26cfFFC532479319Cca0dC": "agree",
+        "0x62718FbDf0509A398aA525C152D60c1F7A9d33D3": "agree",
+        "0xE74a9088aD4d6dBf3C8cABcC0B91072d2a8c8afa": "agree",
+        "0xee46B9Dc4c860149B1d140840284e5374854e746": "agree"
       },
-      "accepted_status_observed": "ACCEPTED"
+      "accepted_status_observed": "ACCEPTED",
+      "read_backs": {
+        "probe.status": {
+          "counter": 0,
+          "last_tag": "init"
+        }
+      }
     },
     {
       "label": "P2: probe_ping",
-      "tx_hash": "0x3ec8e250c5cbb6b7fce40b0a2bbd5c03939d37cd259153ff07111093bbf6fab3",
-      "explorer_url": "https://explorer-studio.genlayer.com/transactions/0x3ec8e250c5cbb6b7fce40b0a2bbd5c03939d37cd259153ff07111093bbf6fab3",
+      "tx_hash": "0xcd91f3821eea6caddf8d89707ade14100e60df6da785ed9e901c62a910b0ed9e",
+      "explorer_url": "https://explorer-studio.genlayer.com/transactions/0xcd91f3821eea6caddf8d89707ade14100e60df6da785ed9e901c62a910b0ed9e",
       "expected_failure": false,
       "status_name": "FINALIZED",
       "leader_execution_result": "SUCCESS",
       "leader_error": null,
+      "eq_outputs_count": 0,
       "votes": {
         "0x1B490819e040562a5fb40CD64B1c70D4419c38d1": "idle",
-        "0x23A15A452F19D1B616276fedC5B8B51d69082959": "idle",
-        "0x240d2d7c8DF220110c26cfFFC532479319Cca0dC": "agree",
-        "0xBE58b43DF1d991e054F743Cc5571dD7029F3B888": "agree",
-        "0xE74a9088aD4d6dBf3C8cABcC0B91072d2a8c8afa": "agree"
+        "0x21e4F7ba6Ec0fbf70C019fbc0F9A797c3ed1F969": "agree",
+        "0x4eeaD269a60bB89c98a23c1BCd0bd101CafD90E0": "agree",
+        "0x6fe9DE3d0adc76D6416A13CD8107aaE49A3CF98F": "agree",
+        "0x725Ab89db6A9DD886Ba71Bc5E63a01070C325bE3": "idle"
       },
       "accepted_status_observed": "ACCEPTED",
       "read_backs": {
         "probe.status": {
           "counter": 1,
-          "last_tag": "kleene-gate-preflight"
+          "last_tag": "kleene-gate-v2-preflight"
         }
       }
     },
     {
       "label": "D1: deploy_kleene_gate",
-      "tx_hash": "0x9ed4fc4894a6c73bcd7930aa257191502fb8afbb6c797bdd77b8b42bcbe8a20a",
-      "explorer_url": "https://explorer-studio.genlayer.com/transactions/0x9ed4fc4894a6c73bcd7930aa257191502fb8afbb6c797bdd77b8b42bcbe8a20a",
+      "tx_hash": "0xfee1f99d16deb3c5219e483d4060157fbcea818bce36f7172df33b7321c8a2c6",
+      "explorer_url": "https://explorer-studio.genlayer.com/transactions/0xfee1f99d16deb3c5219e483d4060157fbcea818bce36f7172df33b7321c8a2c6",
       "expected_failure": false,
       "status_name": "FINALIZED",
       "leader_execution_result": "SUCCESS",
       "leader_error": null,
+      "eq_outputs_count": 0,
       "votes": {
-        "0x19a02f95418A6c76091CDA37C4fc542CA82805c9": "agree",
-        "0x1B490819e040562a5fb40CD64B1c70D4419c38d1": "idle",
-        "0x4eeaD269a60bB89c98a23c1BCd0bd101CafD90E0": "agree",
-        "0x534af64FFB6796Bc69aBf4C26c50788F1fFAfe56": "agree",
-        "0x725Ab89db6A9DD886Ba71Bc5E63a01070C325bE3": "idle"
+        "0x5744305308D62592B7De585e1999c4Ea51E03C29": "idle",
+        "0x62718FbDf0509A398aA525C152D60c1F7A9d33D3": "agree",
+        "0x725Ab89db6A9DD886Ba71Bc5E63a01070C325bE3": "agree",
+        "0x813890bC5bEDEB4F5437570962379F04738F18Cb": "agree",
+        "0xBE58b43DF1d991e054F743Cc5571dD7029F3B888": "idle"
       },
       "accepted_status_observed": "ACCEPTED",
       "read_backs": {
@@ -166,18 +175,19 @@
     },
     {
       "label": "S1: create_circuit (REL-PASS, 100 wei, nested AND/OR/NOT/2-of-3)",
-      "tx_hash": "0xb7684e897caaa0e7497da5c494bb1fbb1fa67b27e53f35f9eacd544b723c9d00",
-      "explorer_url": "https://explorer-studio.genlayer.com/transactions/0xb7684e897caaa0e7497da5c494bb1fbb1fa67b27e53f35f9eacd544b723c9d00",
+      "tx_hash": "0xd5ab993bff72c7d8890ea84a175d826bd3dbe890a372c99593b23060e102e882",
+      "explorer_url": "https://explorer-studio.genlayer.com/transactions/0xd5ab993bff72c7d8890ea84a175d826bd3dbe890a372c99593b23060e102e882",
       "expected_failure": false,
       "status_name": "FINALIZED",
       "leader_execution_result": "SUCCESS",
       "leader_error": null,
+      "eq_outputs_count": 0,
       "votes": {
-        "0x21e4F7ba6Ec0fbf70C019fbc0F9A797c3ed1F969": "agree",
-        "0x240d2d7c8DF220110c26cfFFC532479319Cca0dC": "idle",
-        "0x4eeaD269a60bB89c98a23c1BCd0bd101CafD90E0": "agree",
-        "0x725Ab89db6A9DD886Ba71Bc5E63a01070C325bE3": "agree",
-        "0xBE58b43DF1d991e054F743Cc5571dD7029F3B888": "idle"
+        "0x4eeaD269a60bB89c98a23c1BCd0bd101CafD90E0": "idle",
+        "0x5744305308D62592B7De585e1999c4Ea51E03C29": "agree",
+        "0x6DC61b906F74F44612c5545b0b79486133B3556d": "agree",
+        "0x88E148Da14d45c5a5DD2DB25E776eBCBCe0Df539": "agree",
+        "0xe358f855C96d8E7243836cf986eb037175B9467e": "idle"
       },
       "accepted_status_observed": "ACCEPTED",
       "read_backs": {
@@ -248,10 +258,10 @@
           },
           "atoms_evaluated_count": 0,
           "atoms_pruned_count": 0,
-          "beneficiary": "0xe4725DAD686EA2bbc413b6Fe636c5f7650F4cf8b",
+          "beneficiary": "0xb592c0Ae1Fa87aE334a7776b59310E5ad2e695a5",
           "circuit_id": "REL-PASS",
-          "created_at": 1795123826,
-          "deadline_ts": 1795125626,
+          "created_at": 1795164498,
+          "deadline_ts": 1795166298,
           "escrow_wei": 100,
           "finalized_at": 0,
           "gates": {
@@ -302,28 +312,30 @@
             }
           },
           "pruned_atoms": [],
+          "root_can_be_true": true,
           "root_gate_id": "G_ROOT",
           "root_kleene_value": 0,
-          "spec_sha256": "2ea1e48fcce0a60ed48f7fba3ad7259e939ad55c42523c0afa190f54760a8d4b",
-          "sponsor": "0xD0D15b39e05C37e8673b0C9fA053fe3a38218ac6",
+          "spec_sha256": "28488c7f15917c46169c972ca097cc7d9133dd6df72bea2be46bc68469d12560",
+          "sponsor": "0x445Ff6bD81Cf71C14Fe5f133bE1Ce65e8dE1E22a",
           "status": 0
         }
       }
     },
     {
       "label": "S2: evaluate_atom (REL-PASS, A_AUDIT -> CONTRADICTED, prunes A_FORMAL)",
-      "tx_hash": "0xb4116f34db92f788e5a8e10382be8edbe3e62c6f29bfb94ae4e09105e0483f76",
-      "explorer_url": "https://explorer-studio.genlayer.com/transactions/0xb4116f34db92f788e5a8e10382be8edbe3e62c6f29bfb94ae4e09105e0483f76",
+      "tx_hash": "0x30625d537f55b6df78b0a4449c304cb102b09bc82b4f17e38e65d68edfcc5f92",
+      "explorer_url": "https://explorer-studio.genlayer.com/transactions/0x30625d537f55b6df78b0a4449c304cb102b09bc82b4f17e38e65d68edfcc5f92",
       "expected_failure": false,
       "status_name": "FINALIZED",
       "leader_execution_result": "SUCCESS",
       "leader_error": null,
+      "eq_outputs_count": 1,
       "votes": {
-        "0x4eeaD269a60bB89c98a23c1BCd0bd101CafD90E0": "agree",
-        "0x6fe9DE3d0adc76D6416A13CD8107aaE49A3CF98F": "idle",
-        "0x725Ab89db6A9DD886Ba71Bc5E63a01070C325bE3": "idle",
-        "0xE74a9088aD4d6dBf3C8cABcC0B91072d2a8c8afa": "agree",
-        "0xe358f855C96d8E7243836cf986eb037175B9467e": "agree"
+        "0x1B490819e040562a5fb40CD64B1c70D4419c38d1": "agree",
+        "0x23A15A452F19D1B616276fedC5B8B51d69082959": "agree",
+        "0x62718FbDf0509A398aA525C152D60c1F7A9d33D3": "idle",
+        "0xBE58b43DF1d991e054F743Cc5571dD7029F3B888": "agree",
+        "0xee46B9Dc4c860149B1d140840284e5374854e746": "idle"
       },
       "accepted_status_observed": "ACCEPTED",
       "read_backs": {
@@ -337,7 +349,7 @@
           "atoms": {
             "A_AUDIT": {
               "attempts": 1,
-              "evidence_sha256": "70e31836e49f541bb5708465e8a7d50e7e5de359f8c4af3439274c1f4e06340d",
+              "evidence_sha256": "8cbcb44ca0e1ec96730a385a69aff0171e0c931236eaf7f44aa58eeb4f129b60",
               "fetch_status": "OK",
               "finalized": true,
               "http_status": 200,
@@ -392,10 +404,10 @@
           },
           "atoms_evaluated_count": 1,
           "atoms_pruned_count": 1,
-          "beneficiary": "0xe4725DAD686EA2bbc413b6Fe636c5f7650F4cf8b",
+          "beneficiary": "0xb592c0Ae1Fa87aE334a7776b59310E5ad2e695a5",
           "circuit_id": "REL-PASS",
-          "created_at": 1795123826,
-          "deadline_ts": 1795125626,
+          "created_at": 1795164498,
+          "deadline_ts": 1795166298,
           "escrow_wei": 100,
           "finalized_at": 0,
           "gates": {
@@ -448,46 +460,48 @@
           "pruned_atoms": [
             "A_FORMAL"
           ],
+          "root_can_be_true": true,
           "root_gate_id": "G_ROOT",
           "root_kleene_value": 0,
-          "spec_sha256": "2ea1e48fcce0a60ed48f7fba3ad7259e939ad55c42523c0afa190f54760a8d4b",
-          "sponsor": "0xD0D15b39e05C37e8673b0C9fA053fe3a38218ac6",
+          "spec_sha256": "28488c7f15917c46169c972ca097cc7d9133dd6df72bea2be46bc68469d12560",
+          "sponsor": "0x445Ff6bD81Cf71C14Fe5f133bE1Ce65e8dE1E22a",
           "status": 0
         }
       }
     },
     {
       "label": "G1: guard_pruned_atom (REL-PASS, A_FORMAL -> EXPECTED:ATOM_ALREADY_PRUNED)",
-      "tx_hash": "0xb076d9176223aa71f8d872ab8654968be92d3bede7e4b385cd959a4a066af68f",
-      "explorer_url": "https://explorer-studio.genlayer.com/transactions/0xb076d9176223aa71f8d872ab8654968be92d3bede7e4b385cd959a4a066af68f",
+      "tx_hash": "0xe010cea1b87659a8dc3d348247c7572626ff7b161b031754153d0b04762828b1",
+      "explorer_url": "https://explorer-studio.genlayer.com/transactions/0xe010cea1b87659a8dc3d348247c7572626ff7b161b031754153d0b04762828b1",
       "expected_failure": true,
       "status_name": "FINALIZED",
       "leader_execution_result": "ERROR",
       "leader_error": "EXPECTED:ATOM_ALREADY_PRUNED",
+      "eq_outputs_count": 0,
       "votes": {
-        "0x22Eda431B7fBC1216baE3b077a78c973a8719c58": "agree",
-        "0x240d2d7c8DF220110c26cfFFC532479319Cca0dC": "idle",
-        "0x5744305308D62592B7De585e1999c4Ea51E03C29": "agree",
-        "0x62718FbDf0509A398aA525C152D60c1F7A9d33D3": "agree",
-        "0x725Ab89db6A9DD886Ba71Bc5E63a01070C325bE3": "idle"
+        "0x1B490819e040562a5fb40CD64B1c70D4419c38d1": "agree",
+        "0x62718FbDf0509A398aA525C152D60c1F7A9d33D3": "idle",
+        "0x6DC61b906F74F44612c5545b0b79486133B3556d": "agree",
+        "0xBE58b43DF1d991e054F743Cc5571dD7029F3B888": "agree",
+        "0xE74a9088aD4d6dBf3C8cABcC0B91072d2a8c8afa": "idle"
       },
-      "accepted_status_observed": "ACCEPTED",
-      "eq_outputs_count": 0
+      "accepted_status_observed": "ACCEPTED"
     },
     {
       "label": "S3: evaluate_atom (REL-PASS, B_REV1 -> HOLDS)",
-      "tx_hash": "0xda54ef61e6ad0e63e004b2dd7c7cd73044acdcddec4c03b00b9a4bb62153bd5d",
-      "explorer_url": "https://explorer-studio.genlayer.com/transactions/0xda54ef61e6ad0e63e004b2dd7c7cd73044acdcddec4c03b00b9a4bb62153bd5d",
+      "tx_hash": "0x63704f6fc439014ccc659d754636cc113397edf2e7ddfdd340bd929e3f022f63",
+      "explorer_url": "https://explorer-studio.genlayer.com/transactions/0x63704f6fc439014ccc659d754636cc113397edf2e7ddfdd340bd929e3f022f63",
       "expected_failure": false,
       "status_name": "FINALIZED",
       "leader_execution_result": "SUCCESS",
       "leader_error": null,
+      "eq_outputs_count": 1,
       "votes": {
-        "0x5744305308D62592B7De585e1999c4Ea51E03C29": "agree",
-        "0x5e880d85a70De78dDEf86236d57c42e73F560615": "idle",
+        "0x1B490819e040562a5fb40CD64B1c70D4419c38d1": "agree",
+        "0x22Eda431B7fBC1216baE3b077a78c973a8719c58": "agree",
         "0x62718FbDf0509A398aA525C152D60c1F7A9d33D3": "agree",
-        "0x88E148Da14d45c5a5DD2DB25E776eBCBCe0Df539": "agree",
-        "0xBE58b43DF1d991e054F743Cc5571dD7029F3B888": "idle"
+        "0x6fe9DE3d0adc76D6416A13CD8107aaE49A3CF98F": "idle",
+        "0x725Ab89db6A9DD886Ba71Bc5E63a01070C325bE3": "idle"
       },
       "accepted_status_observed": "ACCEPTED",
       "read_backs": {
@@ -500,7 +514,7 @@
           "atoms": {
             "A_AUDIT": {
               "attempts": 1,
-              "evidence_sha256": "70e31836e49f541bb5708465e8a7d50e7e5de359f8c4af3439274c1f4e06340d",
+              "evidence_sha256": "8cbcb44ca0e1ec96730a385a69aff0171e0c931236eaf7f44aa58eeb4f129b60",
               "fetch_status": "OK",
               "finalized": true,
               "http_status": 200,
@@ -518,7 +532,7 @@
             },
             "B_REV1": {
               "attempts": 1,
-              "evidence_sha256": "5692682821f83ba825ca72d1935f1413b4a5fb974d3e8c8bdca678fe1d13f0cb",
+              "evidence_sha256": "74d6cbb0ef112b0ad640ff9edd8d077e6d02c066310bb294a884e00fa4ecd6b4",
               "fetch_status": "OK",
               "finalized": true,
               "http_status": 200,
@@ -555,10 +569,10 @@
           },
           "atoms_evaluated_count": 2,
           "atoms_pruned_count": 1,
-          "beneficiary": "0xe4725DAD686EA2bbc413b6Fe636c5f7650F4cf8b",
+          "beneficiary": "0xb592c0Ae1Fa87aE334a7776b59310E5ad2e695a5",
           "circuit_id": "REL-PASS",
-          "created_at": 1795123826,
-          "deadline_ts": 1795125626,
+          "created_at": 1795164498,
+          "deadline_ts": 1795166298,
           "escrow_wei": 100,
           "finalized_at": 0,
           "gates": {
@@ -611,28 +625,30 @@
           "pruned_atoms": [
             "A_FORMAL"
           ],
+          "root_can_be_true": true,
           "root_gate_id": "G_ROOT",
           "root_kleene_value": 0,
-          "spec_sha256": "2ea1e48fcce0a60ed48f7fba3ad7259e939ad55c42523c0afa190f54760a8d4b",
-          "sponsor": "0xD0D15b39e05C37e8673b0C9fA053fe3a38218ac6",
+          "spec_sha256": "28488c7f15917c46169c972ca097cc7d9133dd6df72bea2be46bc68469d12560",
+          "sponsor": "0x445Ff6bD81Cf71C14Fe5f133bE1Ce65e8dE1E22a",
           "status": 0
         }
       }
     },
     {
       "label": "S4: evaluate_atom (REL-PASS, B_REV2 -> HOLDS, 2-of-3 quorum prunes B_REV3)",
-      "tx_hash": "0x976f2e143211c3b79ee66fbafd409babb78c80b656483b25bda060bfa2956a97",
-      "explorer_url": "https://explorer-studio.genlayer.com/transactions/0x976f2e143211c3b79ee66fbafd409babb78c80b656483b25bda060bfa2956a97",
+      "tx_hash": "0x2d491975a95dadcaeefd9a578e81c511de841124e41cde1cbc3ba126195eae91",
+      "explorer_url": "https://explorer-studio.genlayer.com/transactions/0x2d491975a95dadcaeefd9a578e81c511de841124e41cde1cbc3ba126195eae91",
       "expected_failure": false,
       "status_name": "FINALIZED",
       "leader_execution_result": "SUCCESS",
       "leader_error": null,
+      "eq_outputs_count": 1,
       "votes": {
-        "0x23A15A452F19D1B616276fedC5B8B51d69082959": "agree",
-        "0x240d2d7c8DF220110c26cfFFC532479319Cca0dC": "idle",
-        "0x5e880d85a70De78dDEf86236d57c42e73F560615": "agree",
-        "0x813890bC5bEDEB4F5437570962379F04738F18Cb": "idle",
-        "0xE74a9088aD4d6dBf3C8cABcC0B91072d2a8c8afa": "agree"
+        "0x19a02f95418A6c76091CDA37C4fc542CA82805c9": "agree",
+        "0x1B490819e040562a5fb40CD64B1c70D4419c38d1": "agree",
+        "0x534af64FFB6796Bc69aBf4C26c50788F1fFAfe56": "idle",
+        "0xBE58b43DF1d991e054F743Cc5571dD7029F3B888": "agree",
+        "0xE74a9088aD4d6dBf3C8cABcC0B91072d2a8c8afa": "idle"
       },
       "accepted_status_observed": "ACCEPTED",
       "read_backs": {
@@ -643,7 +659,7 @@
           "atoms": {
             "A_AUDIT": {
               "attempts": 1,
-              "evidence_sha256": "70e31836e49f541bb5708465e8a7d50e7e5de359f8c4af3439274c1f4e06340d",
+              "evidence_sha256": "8cbcb44ca0e1ec96730a385a69aff0171e0c931236eaf7f44aa58eeb4f129b60",
               "fetch_status": "OK",
               "finalized": true,
               "http_status": 200,
@@ -661,7 +677,7 @@
             },
             "B_REV1": {
               "attempts": 1,
-              "evidence_sha256": "5692682821f83ba825ca72d1935f1413b4a5fb974d3e8c8bdca678fe1d13f0cb",
+              "evidence_sha256": "74d6cbb0ef112b0ad640ff9edd8d077e6d02c066310bb294a884e00fa4ecd6b4",
               "fetch_status": "OK",
               "finalized": true,
               "http_status": 200,
@@ -670,7 +686,7 @@
             },
             "B_REV2": {
               "attempts": 1,
-              "evidence_sha256": "94053188735d240338a4445ec157775701b0f81c87a4b55e948da2d85c65d8d6",
+              "evidence_sha256": "0cee222f2a4de4d2930b5aba003069662b78eb6022f542bcf979abd4ade7539a",
               "fetch_status": "OK",
               "finalized": true,
               "http_status": 200,
@@ -698,10 +714,10 @@
           },
           "atoms_evaluated_count": 3,
           "atoms_pruned_count": 2,
-          "beneficiary": "0xe4725DAD686EA2bbc413b6Fe636c5f7650F4cf8b",
+          "beneficiary": "0xb592c0Ae1Fa87aE334a7776b59310E5ad2e695a5",
           "circuit_id": "REL-PASS",
-          "created_at": 1795123826,
-          "deadline_ts": 1795125626,
+          "created_at": 1795164498,
+          "deadline_ts": 1795166298,
           "escrow_wei": 100,
           "finalized_at": 0,
           "gates": {
@@ -755,82 +771,84 @@
             "A_FORMAL",
             "B_REV3"
           ],
+          "root_can_be_true": true,
           "root_gate_id": "G_ROOT",
           "root_kleene_value": 0,
-          "spec_sha256": "2ea1e48fcce0a60ed48f7fba3ad7259e939ad55c42523c0afa190f54760a8d4b",
-          "sponsor": "0xD0D15b39e05C37e8673b0C9fA053fe3a38218ac6",
+          "spec_sha256": "28488c7f15917c46169c972ca097cc7d9133dd6df72bea2be46bc68469d12560",
+          "sponsor": "0x445Ff6bD81Cf71C14Fe5f133bE1Ce65e8dE1E22a",
           "status": 0
         }
       }
     },
     {
       "label": "G2: guard_pruned_quorum_atom (REL-PASS, B_REV3 -> EXPECTED:ATOM_ALREADY_PRUNED)",
-      "tx_hash": "0x0ecb92a535997a00c33b0f7906fa1f95d4df5c92c86780cac175652d5635b246",
-      "explorer_url": "https://explorer-studio.genlayer.com/transactions/0x0ecb92a535997a00c33b0f7906fa1f95d4df5c92c86780cac175652d5635b246",
+      "tx_hash": "0xc795298e46fd3f194765385dde621621d6010853e996e10207b2934821360878",
+      "explorer_url": "https://explorer-studio.genlayer.com/transactions/0xc795298e46fd3f194765385dde621621d6010853e996e10207b2934821360878",
       "expected_failure": true,
       "status_name": "FINALIZED",
       "leader_execution_result": "ERROR",
       "leader_error": "EXPECTED:ATOM_ALREADY_PRUNED",
+      "eq_outputs_count": 0,
       "votes": {
         "0x19a02f95418A6c76091CDA37C4fc542CA82805c9": "idle",
-        "0x21e4F7ba6Ec0fbf70C019fbc0F9A797c3ed1F969": "agree",
-        "0x725Ab89db6A9DD886Ba71Bc5E63a01070C325bE3": "idle",
-        "0x88E148Da14d45c5a5DD2DB25E776eBCBCe0Df539": "agree",
-        "0xe358f855C96d8E7243836cf986eb037175B9467e": "agree"
+        "0x23A15A452F19D1B616276fedC5B8B51d69082959": "agree",
+        "0x4eeaD269a60bB89c98a23c1BCd0bd101CafD90E0": "agree",
+        "0x5e880d85a70De78dDEf86236d57c42e73F560615": "idle",
+        "0x62718FbDf0509A398aA525C152D60c1F7A9d33D3": "agree"
       },
-      "accepted_status_observed": "ACCEPTED",
-      "eq_outputs_count": 0
+      "accepted_status_observed": "ACCEPTED"
     },
     {
       "label": "G3: guard_premature_withdraw (Beneficiary before V_EXPLOIT -> EXPECTED:NOTHING_TO_WITHDRAW)",
-      "tx_hash": "0x0c9d7f980207f424fc3c669ab3f77a2f8fdf34dbaa5256ee93c512ced4cd1559",
-      "explorer_url": "https://explorer-studio.genlayer.com/transactions/0x0c9d7f980207f424fc3c669ab3f77a2f8fdf34dbaa5256ee93c512ced4cd1559",
+      "tx_hash": "0x5ed1f5e23ccc96c57a3e9822805976132aea23078c9790b643e6724d4f2d9cda",
+      "explorer_url": "https://explorer-studio.genlayer.com/transactions/0x5ed1f5e23ccc96c57a3e9822805976132aea23078c9790b643e6724d4f2d9cda",
       "expected_failure": true,
       "status_name": "FINALIZED",
       "leader_execution_result": "ERROR",
       "leader_error": "EXPECTED:NOTHING_TO_WITHDRAW",
+      "eq_outputs_count": 0,
       "votes": {
-        "0x1B490819e040562a5fb40CD64B1c70D4419c38d1": "agree",
-        "0x240d2d7c8DF220110c26cfFFC532479319Cca0dC": "idle",
-        "0x4eeaD269a60bB89c98a23c1BCd0bd101CafD90E0": "agree",
-        "0x6fe9DE3d0adc76D6416A13CD8107aaE49A3CF98F": "idle",
-        "0xE74a9088aD4d6dBf3C8cABcC0B91072d2a8c8afa": "agree"
+        "0x21e4F7ba6Ec0fbf70C019fbc0F9A797c3ed1F969": "idle",
+        "0x62718FbDf0509A398aA525C152D60c1F7A9d33D3": "idle",
+        "0x6DC61b906F74F44612c5545b0b79486133B3556d": "agree",
+        "0x6fe9DE3d0adc76D6416A13CD8107aaE49A3CF98F": "agree",
+        "0xe358f855C96d8E7243836cf986eb037175B9467e": "agree"
       },
-      "accepted_status_observed": "ACCEPTED",
-      "eq_outputs_count": 0
+      "accepted_status_observed": "ACCEPTED"
     },
     {
       "label": "G4: guard_mid_eval_cancel (Sponsor -> EXPECTED:CIRCUIT_EVALUATION_STARTED)",
-      "tx_hash": "0x20892c577bbfa1d1e9824bd889e31017ad4d770b0f4ef26cd7c8c1e5f1aa4389",
-      "explorer_url": "https://explorer-studio.genlayer.com/transactions/0x20892c577bbfa1d1e9824bd889e31017ad4d770b0f4ef26cd7c8c1e5f1aa4389",
+      "tx_hash": "0x9f298dd851325c84d69e3ef2fa049441777f2b4962b7f3fbd43aed1d2e2a03ad",
+      "explorer_url": "https://explorer-studio.genlayer.com/transactions/0x9f298dd851325c84d69e3ef2fa049441777f2b4962b7f3fbd43aed1d2e2a03ad",
       "expected_failure": true,
       "status_name": "FINALIZED",
       "leader_execution_result": "ERROR",
       "leader_error": "EXPECTED:CIRCUIT_EVALUATION_STARTED",
+      "eq_outputs_count": 0,
       "votes": {
         "0x1B490819e040562a5fb40CD64B1c70D4419c38d1": "agree",
+        "0x534af64FFB6796Bc69aBf4C26c50788F1fFAfe56": "agree",
         "0x5744305308D62592B7De585e1999c4Ea51E03C29": "idle",
-        "0x725Ab89db6A9DD886Ba71Bc5E63a01070C325bE3": "idle",
-        "0xBE58b43DF1d991e054F743Cc5571dD7029F3B888": "agree",
-        "0xE74a9088aD4d6dBf3C8cABcC0B91072d2a8c8afa": "agree"
+        "0x5e880d85a70De78dDEf86236d57c42e73F560615": "idle",
+        "0x88E148Da14d45c5a5DD2DB25E776eBCBCe0Df539": "agree"
       },
-      "accepted_status_observed": "ACCEPTED",
-      "eq_outputs_count": 0
+      "accepted_status_observed": "ACCEPTED"
     },
     {
       "label": "S5: evaluate_atom (REL-PASS, V_EXPLOIT -> CONTRADICTED => NOT=TRUE => DECIDED_TRUE)",
-      "tx_hash": "0xa56c61c389fe6bc9cf826816be93bb711f564606b295998e47d98b7b939943ab",
-      "explorer_url": "https://explorer-studio.genlayer.com/transactions/0xa56c61c389fe6bc9cf826816be93bb711f564606b295998e47d98b7b939943ab",
+      "tx_hash": "0x3381bb09948d14b0feb0f2569999668c621610e7f8c1b51734fe14b64c1b567e",
+      "explorer_url": "https://explorer-studio.genlayer.com/transactions/0x3381bb09948d14b0feb0f2569999668c621610e7f8c1b51734fe14b64c1b567e",
       "expected_failure": false,
       "status_name": "FINALIZED",
       "leader_execution_result": "SUCCESS",
       "leader_error": null,
+      "eq_outputs_count": 1,
       "votes": {
-        "0x22Eda431B7fBC1216baE3b077a78c973a8719c58": "agree",
-        "0x23A15A452F19D1B616276fedC5B8B51d69082959": "agree",
-        "0x534af64FFB6796Bc69aBf4C26c50788F1fFAfe56": "idle",
-        "0x6fe9DE3d0adc76D6416A13CD8107aaE49A3CF98F": "agree",
-        "0x88E148Da14d45c5a5DD2DB25E776eBCBCe0Df539": "idle"
+        "0x4eeaD269a60bB89c98a23c1BCd0bd101CafD90E0": "agree",
+        "0x5744305308D62592B7De585e1999c4Ea51E03C29": "agree",
+        "0x5e880d85a70De78dDEf86236d57c42e73F560615": "agree",
+        "0x62718FbDf0509A398aA525C152D60c1F7A9d33D3": "idle",
+        "0x725Ab89db6A9DD886Ba71Bc5E63a01070C325bE3": "idle"
       },
       "accepted_status_observed": "ACCEPTED",
       "read_backs": {
@@ -839,7 +857,7 @@
           "atoms": {
             "A_AUDIT": {
               "attempts": 1,
-              "evidence_sha256": "70e31836e49f541bb5708465e8a7d50e7e5de359f8c4af3439274c1f4e06340d",
+              "evidence_sha256": "8cbcb44ca0e1ec96730a385a69aff0171e0c931236eaf7f44aa58eeb4f129b60",
               "fetch_status": "OK",
               "finalized": true,
               "http_status": 200,
@@ -857,7 +875,7 @@
             },
             "B_REV1": {
               "attempts": 1,
-              "evidence_sha256": "5692682821f83ba825ca72d1935f1413b4a5fb974d3e8c8bdca678fe1d13f0cb",
+              "evidence_sha256": "74d6cbb0ef112b0ad640ff9edd8d077e6d02c066310bb294a884e00fa4ecd6b4",
               "fetch_status": "OK",
               "finalized": true,
               "http_status": 200,
@@ -866,7 +884,7 @@
             },
             "B_REV2": {
               "attempts": 1,
-              "evidence_sha256": "94053188735d240338a4445ec157775701b0f81c87a4b55e948da2d85c65d8d6",
+              "evidence_sha256": "0cee222f2a4de4d2930b5aba003069662b78eb6022f542bcf979abd4ade7539a",
               "fetch_status": "OK",
               "finalized": true,
               "http_status": 200,
@@ -884,7 +902,7 @@
             },
             "V_EXPLOIT": {
               "attempts": 1,
-              "evidence_sha256": "bb338a1f08f1e47932a827fa8023cb4a4cef3ef0186b6557c4935fb9e6a57378",
+              "evidence_sha256": "2411d050068e265414c9eef946e2c378ddab85acadcc01cae38dca240bbd6983",
               "fetch_status": "OK",
               "finalized": true,
               "http_status": 200,
@@ -894,12 +912,12 @@
           },
           "atoms_evaluated_count": 4,
           "atoms_pruned_count": 2,
-          "beneficiary": "0xe4725DAD686EA2bbc413b6Fe636c5f7650F4cf8b",
+          "beneficiary": "0xb592c0Ae1Fa87aE334a7776b59310E5ad2e695a5",
           "circuit_id": "REL-PASS",
-          "created_at": 1795123826,
-          "deadline_ts": 1795125626,
+          "created_at": 1795164498,
+          "deadline_ts": 1795166298,
           "escrow_wei": 100,
-          "finalized_at": 1795124192,
+          "finalized_at": 1795164837,
           "gates": {
             "G_FAST": {
               "children": [
@@ -951,10 +969,11 @@
             "A_FORMAL",
             "B_REV3"
           ],
+          "root_can_be_true": true,
           "root_gate_id": "G_ROOT",
           "root_kleene_value": 1,
-          "spec_sha256": "2ea1e48fcce0a60ed48f7fba3ad7259e939ad55c42523c0afa190f54760a8d4b",
-          "sponsor": "0xD0D15b39e05C37e8673b0C9fA053fe3a38218ac6",
+          "spec_sha256": "28488c7f15917c46169c972ca097cc7d9133dd6df72bea2be46bc68469d12560",
+          "sponsor": "0x445Ff6bD81Cf71C14Fe5f133bE1Ce65e8dE1E22a",
           "status": 1
         },
         "beneficiary_withdrawable": 100
@@ -962,18 +981,19 @@
     },
     {
       "label": "S6: withdraw (Beneficiary pulls 100 wei)",
-      "tx_hash": "0x042c08bc52dcf5f7d813bf1ababd608c996d1eafc0e09f090783fc324ee576de",
-      "explorer_url": "https://explorer-studio.genlayer.com/transactions/0x042c08bc52dcf5f7d813bf1ababd608c996d1eafc0e09f090783fc324ee576de",
+      "tx_hash": "0xdf517dcfac12dd07a8a90ef50e62988d19cd93017215b9cb66a3065314e8b273",
+      "explorer_url": "https://explorer-studio.genlayer.com/transactions/0xdf517dcfac12dd07a8a90ef50e62988d19cd93017215b9cb66a3065314e8b273",
       "expected_failure": false,
       "status_name": "FINALIZED",
       "leader_execution_result": "SUCCESS",
       "leader_error": null,
+      "eq_outputs_count": 0,
       "votes": {
-        "0x19a02f95418A6c76091CDA37C4fc542CA82805c9": "agree",
+        "0x22Eda431B7fBC1216baE3b077a78c973a8719c58": "agree",
         "0x240d2d7c8DF220110c26cfFFC532479319Cca0dC": "agree",
-        "0x4eeaD269a60bB89c98a23c1BCd0bd101CafD90E0": "agree",
-        "0x6fe9DE3d0adc76D6416A13CD8107aaE49A3CF98F": "agree",
-        "0x813890bC5bEDEB4F5437570962379F04738F18Cb": "agree"
+        "0x5e880d85a70De78dDEf86236d57c42e73F560615": "agree",
+        "0x6DC61b906F74F44612c5545b0b79486133B3556d": "idle",
+        "0xBE58b43DF1d991e054F743Cc5571dD7029F3B888": "idle"
       },
       "accepted_status_observed": "ACCEPTED",
       "read_backs": {
@@ -984,58 +1004,192 @@
           "total_locked_wei": 0,
           "total_withdrawable_wei": 0,
           "total_withdrawn_wei": 100
-        }
+        },
+        "beneficiary_native_balance_before": 1000000000000000000000,
+        "beneficiary_native_balance_after": 1000000000000000000000
       }
     },
     {
       "label": "S7: create_circuit (REL-VETO, 80 wei)",
-      "tx_hash": "0x505a27fdee379fd762eae13f73085c14563aac1c34423b3a9eefbac64247ee8a",
-      "explorer_url": "https://explorer-studio.genlayer.com/transactions/0x505a27fdee379fd762eae13f73085c14563aac1c34423b3a9eefbac64247ee8a",
+      "tx_hash": "0xc7bdc9f877118263c8fff641664237729fbb67bdd40f6aca71a3d86972fd84cb",
+      "explorer_url": "https://explorer-studio.genlayer.com/transactions/0xc7bdc9f877118263c8fff641664237729fbb67bdd40f6aca71a3d86972fd84cb",
       "expected_failure": false,
       "status_name": "FINALIZED",
       "leader_execution_result": "SUCCESS",
       "leader_error": null,
+      "eq_outputs_count": 0,
       "votes": {
-        "0x22Eda431B7fBC1216baE3b077a78c973a8719c58": "agree",
-        "0x5744305308D62592B7De585e1999c4Ea51E03C29": "agree",
-        "0x813890bC5bEDEB4F5437570962379F04738F18Cb": "agree",
-        "0xE74a9088aD4d6dBf3C8cABcC0B91072d2a8c8afa": "agree",
-        "0xe358f855C96d8E7243836cf986eb037175B9467e": "agree"
+        "0x1B490819e040562a5fb40CD64B1c70D4419c38d1": "agree",
+        "0x240d2d7c8DF220110c26cfFFC532479319Cca0dC": "agree",
+        "0x6fe9DE3d0adc76D6416A13CD8107aaE49A3CF98F": "agree",
+        "0x725Ab89db6A9DD886Ba71Bc5E63a01070C325bE3": "idle",
+        "0xE74a9088aD4d6dBf3C8cABcC0B91072d2a8c8afa": "idle"
       },
-      "accepted_status_observed": "ACCEPTED"
+      "accepted_status_observed": "ACCEPTED",
+      "read_backs": {
+        "get_circuit(REL-VETO)": {
+          "active_frontier": [
+            "A_AUDIT",
+            "A_FORMAL",
+            "B_REV1",
+            "B_REV2",
+            "B_REV3",
+            "V_EXPLOIT"
+          ],
+          "atoms": {
+            "A_AUDIT": {
+              "attempts": 0,
+              "evidence_sha256": "",
+              "fetch_status": "PENDING",
+              "finalized": false,
+              "http_status": 0,
+              "kleene_value": 0,
+              "verdict": "UNEVALUATED"
+            },
+            "A_FORMAL": {
+              "attempts": 0,
+              "evidence_sha256": "",
+              "fetch_status": "PENDING",
+              "finalized": false,
+              "http_status": 0,
+              "kleene_value": 0,
+              "verdict": "UNEVALUATED"
+            },
+            "B_REV1": {
+              "attempts": 0,
+              "evidence_sha256": "",
+              "fetch_status": "PENDING",
+              "finalized": false,
+              "http_status": 0,
+              "kleene_value": 0,
+              "verdict": "UNEVALUATED"
+            },
+            "B_REV2": {
+              "attempts": 0,
+              "evidence_sha256": "",
+              "fetch_status": "PENDING",
+              "finalized": false,
+              "http_status": 0,
+              "kleene_value": 0,
+              "verdict": "UNEVALUATED"
+            },
+            "B_REV3": {
+              "attempts": 0,
+              "evidence_sha256": "",
+              "fetch_status": "PENDING",
+              "finalized": false,
+              "http_status": 0,
+              "kleene_value": 0,
+              "verdict": "UNEVALUATED"
+            },
+            "V_EXPLOIT": {
+              "attempts": 0,
+              "evidence_sha256": "",
+              "fetch_status": "PENDING",
+              "finalized": false,
+              "http_status": 0,
+              "kleene_value": 0,
+              "verdict": "UNEVALUATED"
+            }
+          },
+          "atoms_evaluated_count": 0,
+          "atoms_pruned_count": 0,
+          "beneficiary": "0xb592c0Ae1Fa87aE334a7776b59310E5ad2e695a5",
+          "circuit_id": "REL-VETO",
+          "created_at": 1795164928,
+          "deadline_ts": 1795166728,
+          "escrow_wei": 80,
+          "finalized_at": 0,
+          "gates": {
+            "G_FAST": {
+              "children": [
+                "A_AUDIT",
+                "A_FORMAL"
+              ],
+              "kleene_value": 0,
+              "op": "AND",
+              "threshold": 0
+            },
+            "G_NO_VETO": {
+              "children": [
+                "V_EXPLOIT"
+              ],
+              "kleene_value": 0,
+              "op": "NOT",
+              "threshold": 0
+            },
+            "G_PATH": {
+              "children": [
+                "G_FAST",
+                "G_QUORUM"
+              ],
+              "kleene_value": 0,
+              "op": "OR",
+              "threshold": 0
+            },
+            "G_QUORUM": {
+              "children": [
+                "B_REV1",
+                "B_REV2",
+                "B_REV3"
+              ],
+              "kleene_value": 0,
+              "op": "K_OF_N",
+              "threshold": 2
+            },
+            "G_ROOT": {
+              "children": [
+                "G_PATH",
+                "G_NO_VETO"
+              ],
+              "kleene_value": 0,
+              "op": "AND",
+              "threshold": 0
+            }
+          },
+          "pruned_atoms": [],
+          "root_can_be_true": true,
+          "root_gate_id": "G_ROOT",
+          "root_kleene_value": 0,
+          "spec_sha256": "e5a55083bd00c9f51b0cf381a0a4a90e75c17319195ae94589fba5b1e879b397",
+          "sponsor": "0x445Ff6bD81Cf71C14Fe5f133bE1Ce65e8dE1E22a",
+          "status": 0
+        }
+      }
     },
     {
       "label": "G5: guard_unauthorized_cancel (Stranger -> EXPECTED:UNAUTHORIZED_CALLER)",
-      "tx_hash": "0x7d51cdb73d3cb1cc458985b548cd8fbd0a5778a7afdae4e6979c6f84e4914b1c",
-      "explorer_url": "https://explorer-studio.genlayer.com/transactions/0x7d51cdb73d3cb1cc458985b548cd8fbd0a5778a7afdae4e6979c6f84e4914b1c",
+      "tx_hash": "0x0d414ef477bb9e6f80a21e6996eb7d9bcec242598bec5b8e05281bc96d70278d",
+      "explorer_url": "https://explorer-studio.genlayer.com/transactions/0x0d414ef477bb9e6f80a21e6996eb7d9bcec242598bec5b8e05281bc96d70278d",
       "expected_failure": true,
       "status_name": "FINALIZED",
       "leader_execution_result": "ERROR",
       "leader_error": "EXPECTED:UNAUTHORIZED_CALLER",
+      "eq_outputs_count": 0,
       "votes": {
-        "0x5e880d85a70De78dDEf86236d57c42e73F560615": "idle",
-        "0x62718FbDf0509A398aA525C152D60c1F7A9d33D3": "agree",
-        "0x6fe9DE3d0adc76D6416A13CD8107aaE49A3CF98F": "idle",
-        "0xBE58b43DF1d991e054F743Cc5571dD7029F3B888": "agree",
-        "0xE74a9088aD4d6dBf3C8cABcC0B91072d2a8c8afa": "agree"
+        "0x21e4F7ba6Ec0fbf70C019fbc0F9A797c3ed1F969": "idle",
+        "0x23A15A452F19D1B616276fedC5B8B51d69082959": "idle",
+        "0x6DC61b906F74F44612c5545b0b79486133B3556d": "agree",
+        "0x813890bC5bEDEB4F5437570962379F04738F18Cb": "agree",
+        "0xBE58b43DF1d991e054F743Cc5571dD7029F3B888": "agree"
       },
-      "accepted_status_observed": "ACCEPTED",
-      "eq_outputs_count": 0
+      "accepted_status_observed": "ACCEPTED"
     },
     {
       "label": "S8: evaluate_atom (REL-VETO, V_EXPLOIT -> HOLDS => NOT=FALSE => DECIDED_FALSE)",
-      "tx_hash": "0xf35dcf6617e8a5ca5eeb2445187bf663116f908c800411e5767d5f1e933190f2",
-      "explorer_url": "https://explorer-studio.genlayer.com/transactions/0xf35dcf6617e8a5ca5eeb2445187bf663116f908c800411e5767d5f1e933190f2",
+      "tx_hash": "0xf0cf3c254ba642a35078f8d44841374ec611393609a5511864e74c2d5fbfda53",
+      "explorer_url": "https://explorer-studio.genlayer.com/transactions/0xf0cf3c254ba642a35078f8d44841374ec611393609a5511864e74c2d5fbfda53",
       "expected_failure": false,
       "status_name": "FINALIZED",
       "leader_execution_result": "SUCCESS",
       "leader_error": null,
+      "eq_outputs_count": 1,
       "votes": {
-        "0x5e880d85a70De78dDEf86236d57c42e73F560615": "agree",
-        "0x62718FbDf0509A398aA525C152D60c1F7A9d33D3": "agree",
-        "0x6fe9DE3d0adc76D6416A13CD8107aaE49A3CF98F": "agree",
-        "0x725Ab89db6A9DD886Ba71Bc5E63a01070C325bE3": "idle",
-        "0xe358f855C96d8E7243836cf986eb037175B9467e": "idle"
+        "0x534af64FFB6796Bc69aBf4C26c50788F1fFAfe56": "idle",
+        "0x62718FbDf0509A398aA525C152D60c1F7A9d33D3": "idle",
+        "0x725Ab89db6A9DD886Ba71Bc5E63a01070C325bE3": "agree",
+        "0x813890bC5bEDEB4F5437570962379F04738F18Cb": "agree",
+        "0xBE58b43DF1d991e054F743Cc5571dD7029F3B888": "agree"
       },
       "accepted_status_observed": "ACCEPTED",
       "read_backs": {
@@ -1089,7 +1243,7 @@
             },
             "V_EXPLOIT": {
               "attempts": 1,
-              "evidence_sha256": "bbab128bb3bf538bbd0a26ce4b601f2a0711a2ad4307cb951e3417567fcffafa",
+              "evidence_sha256": "2dbe62048e71481182ba4e246c761d4597879e6d8a064bef796dec6110d064d9",
               "fetch_status": "OK",
               "finalized": true,
               "http_status": 200,
@@ -1099,12 +1253,12 @@
           },
           "atoms_evaluated_count": 1,
           "atoms_pruned_count": 5,
-          "beneficiary": "0xe4725DAD686EA2bbc413b6Fe636c5f7650F4cf8b",
+          "beneficiary": "0xb592c0Ae1Fa87aE334a7776b59310E5ad2e695a5",
           "circuit_id": "REL-VETO",
-          "created_at": 1795124281,
-          "deadline_ts": 1795126081,
+          "created_at": 1795164928,
+          "deadline_ts": 1795166728,
           "escrow_wei": 80,
-          "finalized_at": 1795124364,
+          "finalized_at": 1795165008,
           "gates": {
             "G_FAST": {
               "children": [
@@ -1159,46 +1313,48 @@
             "B_REV2",
             "B_REV3"
           ],
+          "root_can_be_true": false,
           "root_gate_id": "G_ROOT",
           "root_kleene_value": 2,
-          "spec_sha256": "7aa3872a5efe9f3abdabc603bb0e6ef253e761b2db0eff7bb6bad3867c4fee14",
-          "sponsor": "0xD0D15b39e05C37e8673b0C9fA053fe3a38218ac6",
+          "spec_sha256": "e5a55083bd00c9f51b0cf381a0a4a90e75c17319195ae94589fba5b1e879b397",
+          "sponsor": "0x445Ff6bD81Cf71C14Fe5f133bE1Ce65e8dE1E22a",
           "status": 2
         }
       }
     },
     {
       "label": "G6: guard_eval_after_veto (REL-VETO, B_REV1 -> EXPECTED:CIRCUIT_ALREADY_FINAL)",
-      "tx_hash": "0x72a4a27a77976f8b76ee747105a5cfeb9d5efc5bf431d5f4ff727ad3b86cb4e6",
-      "explorer_url": "https://explorer-studio.genlayer.com/transactions/0x72a4a27a77976f8b76ee747105a5cfeb9d5efc5bf431d5f4ff727ad3b86cb4e6",
+      "tx_hash": "0x7c3ab040935c82a76e4ad0856b1d6a2044fb4409f6bf25aaec7e8dd6137718cd",
+      "explorer_url": "https://explorer-studio.genlayer.com/transactions/0x7c3ab040935c82a76e4ad0856b1d6a2044fb4409f6bf25aaec7e8dd6137718cd",
       "expected_failure": true,
       "status_name": "FINALIZED",
       "leader_execution_result": "ERROR",
       "leader_error": "EXPECTED:CIRCUIT_ALREADY_FINAL",
+      "eq_outputs_count": 0,
       "votes": {
         "0x19a02f95418A6c76091CDA37C4fc542CA82805c9": "agree",
-        "0x22Eda431B7fBC1216baE3b077a78c973a8719c58": "agree",
-        "0x62718FbDf0509A398aA525C152D60c1F7A9d33D3": "idle",
-        "0x6DC61b906F74F44612c5545b0b79486133B3556d": "idle",
-        "0xBE58b43DF1d991e054F743Cc5571dD7029F3B888": "agree"
+        "0x1B490819e040562a5fb40CD64B1c70D4419c38d1": "agree",
+        "0x21e4F7ba6Ec0fbf70C019fbc0F9A797c3ed1F969": "idle",
+        "0x240d2d7c8DF220110c26cfFFC532479319Cca0dC": "agree",
+        "0xBE58b43DF1d991e054F743Cc5571dD7029F3B888": "idle"
       },
-      "accepted_status_observed": "ACCEPTED",
-      "eq_outputs_count": 0
+      "accepted_status_observed": "ACCEPTED"
     },
     {
       "label": "S9: create_circuit (REL-FAILCLOSED, 60 wei, duration=150s)",
-      "tx_hash": "0xd1e6c72ff5760fb9e853042eba4b0da5d60411259d81a1a0ef288cb5a34d8aea",
-      "explorer_url": "https://explorer-studio.genlayer.com/transactions/0xd1e6c72ff5760fb9e853042eba4b0da5d60411259d81a1a0ef288cb5a34d8aea",
+      "tx_hash": "0xddb3ca19965290e80a80ec1652ecd0e33b40d6ce3f065db477b6305b73060e64",
+      "explorer_url": "https://explorer-studio.genlayer.com/transactions/0xddb3ca19965290e80a80ec1652ecd0e33b40d6ce3f065db477b6305b73060e64",
       "expected_failure": false,
       "status_name": "FINALIZED",
       "leader_execution_result": "SUCCESS",
       "leader_error": null,
+      "eq_outputs_count": 0,
       "votes": {
-        "0x1B490819e040562a5fb40CD64B1c70D4419c38d1": "idle",
-        "0x5e880d85a70De78dDEf86236d57c42e73F560615": "agree",
-        "0x725Ab89db6A9DD886Ba71Bc5E63a01070C325bE3": "agree",
-        "0x88E148Da14d45c5a5DD2DB25E776eBCBCe0Df539": "agree",
-        "0xBE58b43DF1d991e054F743Cc5571dD7029F3B888": "idle"
+        "0x21e4F7ba6Ec0fbf70C019fbc0F9A797c3ed1F969": "agree",
+        "0x62718FbDf0509A398aA525C152D60c1F7A9d33D3": "idle",
+        "0x6DC61b906F74F44612c5545b0b79486133B3556d": "agree",
+        "0x813890bC5bEDEB4F5437570962379F04738F18Cb": "idle",
+        "0x88E148Da14d45c5a5DD2DB25E776eBCBCe0Df539": "agree"
       },
       "accepted_status_observed": "ACCEPTED",
       "read_backs": {
@@ -1229,10 +1385,10 @@
           },
           "atoms_evaluated_count": 0,
           "atoms_pruned_count": 0,
-          "beneficiary": "0xe4725DAD686EA2bbc413b6Fe636c5f7650F4cf8b",
+          "beneficiary": "0xb592c0Ae1Fa87aE334a7776b59310E5ad2e695a5",
           "circuit_id": "REL-FAILCLOSED",
-          "created_at": 1795124456,
-          "deadline_ts": 1795124606,
+          "created_at": 1795165110,
+          "deadline_ts": 1795165260,
           "escrow_wei": 60,
           "finalized_at": 0,
           "gates": {
@@ -1255,45 +1411,30 @@
             }
           },
           "pruned_atoms": [],
+          "root_can_be_true": true,
           "root_gate_id": "G_ROOT",
           "root_kleene_value": 0,
-          "spec_sha256": "d56b0c61f494eb3a21d622f001abe7582615aa8ebdcc2e18017effaff100fa4d",
-          "sponsor": "0xD0D15b39e05C37e8673b0C9fA053fe3a38218ac6",
+          "spec_sha256": "32ba36c1388660d4208419b895434df73962cd2b70a2f388a8d719686b04cab6",
+          "sponsor": "0x445Ff6bD81Cf71C14Fe5f133bE1Ce65e8dE1E22a",
           "status": 0
         }
       }
     },
     {
       "label": "S10: evaluate_atom (REL-FAILCLOSED, B_REV1 -> HOLDS)",
-      "tx_hash": "0xa19d15fbfaa1716715ca009a962fc44ed9cb3b28f38c4975181eaee7a2af23de",
-      "explorer_url": "https://explorer-studio.genlayer.com/transactions/0xa19d15fbfaa1716715ca009a962fc44ed9cb3b28f38c4975181eaee7a2af23de",
+      "tx_hash": "0xd319393cc320f46348d70901093adff3d77dac1d5234922fb6e5456438fb7b41",
+      "explorer_url": "https://explorer-studio.genlayer.com/transactions/0xd319393cc320f46348d70901093adff3d77dac1d5234922fb6e5456438fb7b41",
       "expected_failure": false,
       "status_name": "FINALIZED",
       "leader_execution_result": "SUCCESS",
       "leader_error": null,
+      "eq_outputs_count": 1,
       "votes": {
-        "0x21e4F7ba6Ec0fbf70C019fbc0F9A797c3ed1F969": "idle",
-        "0x6fe9DE3d0adc76D6416A13CD8107aaE49A3CF98F": "agree",
-        "0x88E148Da14d45c5a5DD2DB25E776eBCBCe0Df539": "agree",
-        "0xe358f855C96d8E7243836cf986eb037175B9467e": "idle",
-        "0xee46B9Dc4c860149B1d140840284e5374854e746": "agree"
-      },
-      "accepted_status_observed": "ACCEPTED"
-    },
-    {
-      "label": "S11: evaluate_atom (REL-FAILCLOSED, V_EXPLOIT -> UNCLEAR => fail-closed NOT(UNKNOWN)=UNKNOWN)",
-      "tx_hash": "0xbf7aedaab3162e5a7d7c01299b58195790b1b209c73987fcb1d8a117507ac60c",
-      "explorer_url": "https://explorer-studio.genlayer.com/transactions/0xbf7aedaab3162e5a7d7c01299b58195790b1b209c73987fcb1d8a117507ac60c",
-      "expected_failure": false,
-      "status_name": "FINALIZED",
-      "leader_execution_result": "SUCCESS",
-      "leader_error": null,
-      "votes": {
+        "0x19a02f95418A6c76091CDA37C4fc542CA82805c9": "disagree",
         "0x1B490819e040562a5fb40CD64B1c70D4419c38d1": "agree",
-        "0x240d2d7c8DF220110c26cfFFC532479319Cca0dC": "agree",
-        "0x5e880d85a70De78dDEf86236d57c42e73F560615": "idle",
-        "0x88E148Da14d45c5a5DD2DB25E776eBCBCe0Df539": "agree",
-        "0xe358f855C96d8E7243836cf986eb037175B9467e": "idle"
+        "0x21e4F7ba6Ec0fbf70C019fbc0F9A797c3ed1F969": "agree",
+        "0x6DC61b906F74F44612c5545b0b79486133B3556d": "idle",
+        "0x6fe9DE3d0adc76D6416A13CD8107aaE49A3CF98F": "agree"
       },
       "accepted_status_observed": "ACCEPTED",
       "read_backs": {
@@ -1304,7 +1445,7 @@
           "atoms": {
             "B_REV1": {
               "attempts": 1,
-              "evidence_sha256": "5692682821f83ba825ca72d1935f1413b4a5fb974d3e8c8bdca678fe1d13f0cb",
+              "evidence_sha256": "74d6cbb0ef112b0ad640ff9edd8d077e6d02c066310bb294a884e00fa4ecd6b4",
               "fetch_status": "OK",
               "finalized": true,
               "http_status": 200,
@@ -1312,21 +1453,21 @@
               "verdict": "HOLDS"
             },
             "V_EXPLOIT": {
-              "attempts": 1,
-              "evidence_sha256": "26844a6dd1068ade60305ca77793399ef84d08d757d23eca1b570e55de73fcbd",
-              "fetch_status": "OK",
+              "attempts": 0,
+              "evidence_sha256": "",
+              "fetch_status": "PENDING",
               "finalized": false,
-              "http_status": 200,
+              "http_status": 0,
               "kleene_value": 0,
-              "verdict": "UNCLEAR"
+              "verdict": "UNEVALUATED"
             }
           },
-          "atoms_evaluated_count": 2,
+          "atoms_evaluated_count": 1,
           "atoms_pruned_count": 0,
-          "beneficiary": "0xe4725DAD686EA2bbc413b6Fe636c5f7650F4cf8b",
+          "beneficiary": "0xb592c0Ae1Fa87aE334a7776b59310E5ad2e695a5",
           "circuit_id": "REL-FAILCLOSED",
-          "created_at": 1795124456,
-          "deadline_ts": 1795124606,
+          "created_at": 1795165110,
+          "deadline_ts": 1795165260,
           "escrow_wei": 60,
           "finalized_at": 0,
           "gates": {
@@ -1349,82 +1490,30 @@
             }
           },
           "pruned_atoms": [],
+          "root_can_be_true": true,
           "root_gate_id": "G_ROOT",
           "root_kleene_value": 0,
-          "spec_sha256": "d56b0c61f494eb3a21d622f001abe7582615aa8ebdcc2e18017effaff100fa4d",
-          "sponsor": "0xD0D15b39e05C37e8673b0C9fA053fe3a38218ac6",
+          "spec_sha256": "32ba36c1388660d4208419b895434df73962cd2b70a2f388a8d719686b04cab6",
+          "sponsor": "0x445Ff6bD81Cf71C14Fe5f133bE1Ce65e8dE1E22a",
           "status": 0
         }
       }
     },
     {
-      "label": "G7: guard_cyclic_circuit (G1->G2->G1 -> EXPECTED:CIRCUIT_CYCLE_DETECTED)",
-      "tx_hash": "0xbc5a3d526451bc0cf458eeab45102f2c6f293822f7724bbdf91eb5d4a4b97c5a",
-      "explorer_url": "https://explorer-studio.genlayer.com/transactions/0xbc5a3d526451bc0cf458eeab45102f2c6f293822f7724bbdf91eb5d4a4b97c5a",
-      "expected_failure": true,
-      "status_name": "FINALIZED",
-      "leader_execution_result": "ERROR",
-      "leader_error": "EXPECTED:CIRCUIT_CYCLE_DETECTED",
-      "votes": {
-        "0x21e4F7ba6Ec0fbf70C019fbc0F9A797c3ed1F969": "agree",
-        "0x23A15A452F19D1B616276fedC5B8B51d69082959": "idle",
-        "0x534af64FFB6796Bc69aBf4C26c50788F1fFAfe56": "agree",
-        "0x62718FbDf0509A398aA525C152D60c1F7A9d33D3": "idle",
-        "0x6fe9DE3d0adc76D6416A13CD8107aaE49A3CF98F": "agree"
-      },
-      "accepted_status_observed": "ACCEPTED",
-      "eq_outputs_count": 0
-    },
-    {
-      "label": "G8: guard_unpinned_branch_url (/main/ -> EXPECTED:UNPINNED_GITHUB_URL)",
-      "tx_hash": "0x3eea08a7d8986329b0a3801d348f56bac036631430d49171572c490960faff0f",
-      "explorer_url": "https://explorer-studio.genlayer.com/transactions/0x3eea08a7d8986329b0a3801d348f56bac036631430d49171572c490960faff0f",
-      "expected_failure": true,
-      "status_name": "FINALIZED",
-      "leader_execution_result": "ERROR",
-      "leader_error": "EXPECTED:UNPINNED_GITHUB_URL",
-      "votes": {
-        "0x19a02f95418A6c76091CDA37C4fc542CA82805c9": "agree",
-        "0x1B490819e040562a5fb40CD64B1c70D4419c38d1": "idle",
-        "0x725Ab89db6A9DD886Ba71Bc5E63a01070C325bE3": "agree",
-        "0x813890bC5bEDEB4F5437570962379F04738F18Cb": "agree",
-        "0xE74a9088aD4d6dBf3C8cABcC0B91072d2a8c8afa": "idle"
-      },
-      "accepted_status_observed": "ACCEPTED",
-      "eq_outputs_count": 0
-    },
-    {
-      "label": "G9: guard_replay_finalized_circuit (REL-PASS, A_AUDIT -> EXPECTED:CIRCUIT_ALREADY_FINAL)",
-      "tx_hash": "0x8fccc3cd63a9a3d188d65514f134bfa3d33745c368dafaaecf6bf7cc0157a935",
-      "explorer_url": "https://explorer-studio.genlayer.com/transactions/0x8fccc3cd63a9a3d188d65514f134bfa3d33745c368dafaaecf6bf7cc0157a935",
-      "expected_failure": true,
-      "status_name": "FINALIZED",
-      "leader_execution_result": "ERROR",
-      "leader_error": "EXPECTED:CIRCUIT_ALREADY_FINAL",
-      "votes": {
-        "0x21e4F7ba6Ec0fbf70C019fbc0F9A797c3ed1F969": "agree",
-        "0x23A15A452F19D1B616276fedC5B8B51d69082959": "agree",
-        "0x240d2d7c8DF220110c26cfFFC532479319Cca0dC": "idle",
-        "0x813890bC5bEDEB4F5437570962379F04738F18Cb": "idle",
-        "0xe358f855C96d8E7243836cf986eb037175B9467e": "agree"
-      },
-      "accepted_status_observed": "ACCEPTED",
-      "eq_outputs_count": 0
-    },
-    {
-      "label": "S12: expire_circuit (REL-FAILCLOSED -> permissionless fail-closed refund)",
-      "tx_hash": "0x85efcac8829e58d7210aeb64b6c0dc91232c8ca3facd2096d637e74510f8f978",
-      "explorer_url": "https://explorer-studio.genlayer.com/transactions/0x85efcac8829e58d7210aeb64b6c0dc91232c8ca3facd2096d637e74510f8f978",
+      "label": "S11: evaluate_atom (REL-FAILCLOSED, V_EXPLOIT -> UNCLEAR => fail-closed NOT(UNKNOWN)=UNKNOWN)",
+      "tx_hash": "0x7a4af6f1f793864e355dfc033ddf61756b79a112849fcc0c9054cb187c848580",
+      "explorer_url": "https://explorer-studio.genlayer.com/transactions/0x7a4af6f1f793864e355dfc033ddf61756b79a112849fcc0c9054cb187c848580",
       "expected_failure": false,
       "status_name": "FINALIZED",
       "leader_execution_result": "SUCCESS",
       "leader_error": null,
+      "eq_outputs_count": 1,
       "votes": {
-        "0x19a02f95418A6c76091CDA37C4fc542CA82805c9": "agree",
-        "0x1B490819e040562a5fb40CD64B1c70D4419c38d1": "idle",
-        "0x6DC61b906F74F44612c5545b0b79486133B3556d": "idle",
-        "0x725Ab89db6A9DD886Ba71Bc5E63a01070C325bE3": "agree",
-        "0xee46B9Dc4c860149B1d140840284e5374854e746": "agree"
+        "0x19a02f95418A6c76091CDA37C4fc542CA82805c9": "idle",
+        "0x240d2d7c8DF220110c26cfFFC532479319Cca0dC": "idle",
+        "0x5744305308D62592B7De585e1999c4Ea51E03C29": "agree",
+        "0x5e880d85a70De78dDEf86236d57c42e73F560615": "agree",
+        "0x62718FbDf0509A398aA525C152D60c1F7A9d33D3": "agree"
       },
       "accepted_status_observed": "ACCEPTED",
       "read_backs": {
@@ -1435,7 +1524,7 @@
           "atoms": {
             "B_REV1": {
               "attempts": 1,
-              "evidence_sha256": "5692682821f83ba825ca72d1935f1413b4a5fb974d3e8c8bdca678fe1d13f0cb",
+              "evidence_sha256": "74d6cbb0ef112b0ad640ff9edd8d077e6d02c066310bb294a884e00fa4ecd6b4",
               "fetch_status": "OK",
               "finalized": true,
               "http_status": 200,
@@ -1444,7 +1533,7 @@
             },
             "V_EXPLOIT": {
               "attempts": 1,
-              "evidence_sha256": "26844a6dd1068ade60305ca77793399ef84d08d757d23eca1b570e55de73fcbd",
+              "evidence_sha256": "78257d51a7aee2c92425dbe69cb6d021ff8c7a1fd2aed0c17ca5b418ac89404d",
               "fetch_status": "OK",
               "finalized": false,
               "http_status": 200,
@@ -1454,12 +1543,12 @@
           },
           "atoms_evaluated_count": 2,
           "atoms_pruned_count": 0,
-          "beneficiary": "0xe4725DAD686EA2bbc413b6Fe636c5f7650F4cf8b",
+          "beneficiary": "0xb592c0Ae1Fa87aE334a7776b59310E5ad2e695a5",
           "circuit_id": "REL-FAILCLOSED",
-          "created_at": 1795124456,
-          "deadline_ts": 1795124606,
+          "created_at": 1795165110,
+          "deadline_ts": 1795165260,
           "escrow_wei": 60,
-          "finalized_at": 1795124719,
+          "finalized_at": 0,
           "gates": {
             "G_NO_VETO": {
               "children": [
@@ -1480,39 +1569,682 @@
             }
           },
           "pruned_atoms": [],
+          "root_can_be_true": true,
           "root_gate_id": "G_ROOT",
           "root_kleene_value": 0,
-          "spec_sha256": "d56b0c61f494eb3a21d622f001abe7582615aa8ebdcc2e18017effaff100fa4d",
-          "sponsor": "0xD0D15b39e05C37e8673b0C9fA053fe3a38218ac6",
+          "spec_sha256": "32ba36c1388660d4208419b895434df73962cd2b70a2f388a8d719686b04cab6",
+          "sponsor": "0x445Ff6bD81Cf71C14Fe5f133bE1Ce65e8dE1E22a",
+          "status": 0
+        }
+      }
+    },
+    {
+      "label": "S12: create_circuit (REL-UNSAT, 50 wei, K_OF_N(2; U_EXHAUST, F_FAIL, P_UNUSED))",
+      "tx_hash": "0x99d2861dbb1bc1787d201ff5e04146d127996f08c0a276759253b7b9d57af444",
+      "explorer_url": "https://explorer-studio.genlayer.com/transactions/0x99d2861dbb1bc1787d201ff5e04146d127996f08c0a276759253b7b9d57af444",
+      "expected_failure": false,
+      "status_name": "FINALIZED",
+      "leader_execution_result": "SUCCESS",
+      "leader_error": null,
+      "eq_outputs_count": 0,
+      "votes": {
+        "0x1B490819e040562a5fb40CD64B1c70D4419c38d1": "agree",
+        "0x5e880d85a70De78dDEf86236d57c42e73F560615": "idle",
+        "0x6DC61b906F74F44612c5545b0b79486133B3556d": "agree",
+        "0x6fe9DE3d0adc76D6416A13CD8107aaE49A3CF98F": "agree",
+        "0xBE58b43DF1d991e054F743Cc5571dD7029F3B888": "idle"
+      },
+      "accepted_status_observed": "ACCEPTED",
+      "read_backs": {
+        "get_circuit(REL-UNSAT)": {
+          "active_frontier": [
+            "F_FAIL",
+            "P_UNUSED",
+            "U_EXHAUST"
+          ],
+          "atoms": {
+            "F_FAIL": {
+              "attempts": 0,
+              "evidence_sha256": "",
+              "fetch_status": "PENDING",
+              "finalized": false,
+              "http_status": 0,
+              "kleene_value": 0,
+              "verdict": "UNEVALUATED"
+            },
+            "P_UNUSED": {
+              "attempts": 0,
+              "evidence_sha256": "",
+              "fetch_status": "PENDING",
+              "finalized": false,
+              "http_status": 0,
+              "kleene_value": 0,
+              "verdict": "UNEVALUATED"
+            },
+            "U_EXHAUST": {
+              "attempts": 0,
+              "evidence_sha256": "",
+              "fetch_status": "PENDING",
+              "finalized": false,
+              "http_status": 0,
+              "kleene_value": 0,
+              "verdict": "UNEVALUATED"
+            }
+          },
+          "atoms_evaluated_count": 0,
+          "atoms_pruned_count": 0,
+          "beneficiary": "0xb592c0Ae1Fa87aE334a7776b59310E5ad2e695a5",
+          "circuit_id": "REL-UNSAT",
+          "created_at": 1795165255,
+          "deadline_ts": 1795167055,
+          "escrow_wei": 50,
+          "finalized_at": 0,
+          "gates": {
+            "G_QUORUM": {
+              "children": [
+                "U_EXHAUST",
+                "F_FAIL",
+                "P_UNUSED"
+              ],
+              "kleene_value": 0,
+              "op": "K_OF_N",
+              "threshold": 2
+            }
+          },
+          "pruned_atoms": [],
+          "root_can_be_true": true,
+          "root_gate_id": "G_QUORUM",
+          "root_kleene_value": 0,
+          "spec_sha256": "16f1574c0ebf9f35ea0dc76fd26e6c70ab08b9f5285cec3c8ba63bdc188534e0",
+          "sponsor": "0x445Ff6bD81Cf71C14Fe5f133bE1Ce65e8dE1E22a",
+          "status": 0
+        }
+      }
+    },
+    {
+      "label": "S13: evaluate_atom (REL-UNSAT, F_FAIL -> CONTRADICTED)",
+      "tx_hash": "0xf462de6aaee6f66076c6842a740bd1569cfdfca96be76ab7d38144ee3d48cc57",
+      "explorer_url": "https://explorer-studio.genlayer.com/transactions/0xf462de6aaee6f66076c6842a740bd1569cfdfca96be76ab7d38144ee3d48cc57",
+      "expected_failure": false,
+      "status_name": "FINALIZED",
+      "leader_execution_result": "SUCCESS",
+      "leader_error": null,
+      "eq_outputs_count": 1,
+      "votes": {
+        "0x22Eda431B7fBC1216baE3b077a78c973a8719c58": "agree",
+        "0x813890bC5bEDEB4F5437570962379F04738F18Cb": "idle",
+        "0xE74a9088aD4d6dBf3C8cABcC0B91072d2a8c8afa": "idle",
+        "0xe358f855C96d8E7243836cf986eb037175B9467e": "agree",
+        "0xee46B9Dc4c860149B1d140840284e5374854e746": "agree"
+      },
+      "accepted_status_observed": "ACCEPTED",
+      "read_backs": {
+        "get_circuit(REL-UNSAT)": {
+          "active_frontier": [
+            "P_UNUSED",
+            "U_EXHAUST"
+          ],
+          "atoms": {
+            "F_FAIL": {
+              "attempts": 1,
+              "evidence_sha256": "8cbcb44ca0e1ec96730a385a69aff0171e0c931236eaf7f44aa58eeb4f129b60",
+              "fetch_status": "OK",
+              "finalized": true,
+              "http_status": 200,
+              "kleene_value": 2,
+              "verdict": "CONTRADICTED"
+            },
+            "P_UNUSED": {
+              "attempts": 0,
+              "evidence_sha256": "",
+              "fetch_status": "PENDING",
+              "finalized": false,
+              "http_status": 0,
+              "kleene_value": 0,
+              "verdict": "UNEVALUATED"
+            },
+            "U_EXHAUST": {
+              "attempts": 0,
+              "evidence_sha256": "",
+              "fetch_status": "PENDING",
+              "finalized": false,
+              "http_status": 0,
+              "kleene_value": 0,
+              "verdict": "UNEVALUATED"
+            }
+          },
+          "atoms_evaluated_count": 1,
+          "atoms_pruned_count": 0,
+          "beneficiary": "0xb592c0Ae1Fa87aE334a7776b59310E5ad2e695a5",
+          "circuit_id": "REL-UNSAT",
+          "created_at": 1795165255,
+          "deadline_ts": 1795167055,
+          "escrow_wei": 50,
+          "finalized_at": 0,
+          "gates": {
+            "G_QUORUM": {
+              "children": [
+                "U_EXHAUST",
+                "F_FAIL",
+                "P_UNUSED"
+              ],
+              "kleene_value": 0,
+              "op": "K_OF_N",
+              "threshold": 2
+            }
+          },
+          "pruned_atoms": [],
+          "root_can_be_true": true,
+          "root_gate_id": "G_QUORUM",
+          "root_kleene_value": 0,
+          "spec_sha256": "16f1574c0ebf9f35ea0dc76fd26e6c70ab08b9f5285cec3c8ba63bdc188534e0",
+          "sponsor": "0x445Ff6bD81Cf71C14Fe5f133bE1Ce65e8dE1E22a",
+          "status": 0
+        }
+      }
+    },
+    {
+      "label": "S14: evaluate_atom (REL-UNSAT, U_EXHAUST attempt 1 -> UNCLEAR)",
+      "tx_hash": "0xfd59d915258a4618cb1c4e995cb3af3ee42f6f825cb098e1916dbeda5706a99d",
+      "explorer_url": "https://explorer-studio.genlayer.com/transactions/0xfd59d915258a4618cb1c4e995cb3af3ee42f6f825cb098e1916dbeda5706a99d",
+      "expected_failure": false,
+      "status_name": "FINALIZED",
+      "leader_execution_result": "SUCCESS",
+      "leader_error": null,
+      "eq_outputs_count": 1,
+      "votes": {
+        "0x23A15A452F19D1B616276fedC5B8B51d69082959": "idle",
+        "0x5e880d85a70De78dDEf86236d57c42e73F560615": "agree",
+        "0x6fe9DE3d0adc76D6416A13CD8107aaE49A3CF98F": "agree",
+        "0xBE58b43DF1d991e054F743Cc5571dD7029F3B888": "idle",
+        "0xE74a9088aD4d6dBf3C8cABcC0B91072d2a8c8afa": "agree"
+      },
+      "accepted_status_observed": "ACCEPTED",
+      "read_backs": {
+        "get_circuit(REL-UNSAT)": {
+          "active_frontier": [
+            "P_UNUSED",
+            "U_EXHAUST"
+          ],
+          "atoms": {
+            "F_FAIL": {
+              "attempts": 1,
+              "evidence_sha256": "8cbcb44ca0e1ec96730a385a69aff0171e0c931236eaf7f44aa58eeb4f129b60",
+              "fetch_status": "OK",
+              "finalized": true,
+              "http_status": 200,
+              "kleene_value": 2,
+              "verdict": "CONTRADICTED"
+            },
+            "P_UNUSED": {
+              "attempts": 0,
+              "evidence_sha256": "",
+              "fetch_status": "PENDING",
+              "finalized": false,
+              "http_status": 0,
+              "kleene_value": 0,
+              "verdict": "UNEVALUATED"
+            },
+            "U_EXHAUST": {
+              "attempts": 1,
+              "evidence_sha256": "78257d51a7aee2c92425dbe69cb6d021ff8c7a1fd2aed0c17ca5b418ac89404d",
+              "fetch_status": "OK",
+              "finalized": false,
+              "http_status": 200,
+              "kleene_value": 0,
+              "verdict": "UNCLEAR"
+            }
+          },
+          "atoms_evaluated_count": 2,
+          "atoms_pruned_count": 0,
+          "beneficiary": "0xb592c0Ae1Fa87aE334a7776b59310E5ad2e695a5",
+          "circuit_id": "REL-UNSAT",
+          "created_at": 1795165255,
+          "deadline_ts": 1795167055,
+          "escrow_wei": 50,
+          "finalized_at": 0,
+          "gates": {
+            "G_QUORUM": {
+              "children": [
+                "U_EXHAUST",
+                "F_FAIL",
+                "P_UNUSED"
+              ],
+              "kleene_value": 0,
+              "op": "K_OF_N",
+              "threshold": 2
+            }
+          },
+          "pruned_atoms": [],
+          "root_can_be_true": true,
+          "root_gate_id": "G_QUORUM",
+          "root_kleene_value": 0,
+          "spec_sha256": "16f1574c0ebf9f35ea0dc76fd26e6c70ab08b9f5285cec3c8ba63bdc188534e0",
+          "sponsor": "0x445Ff6bD81Cf71C14Fe5f133bE1Ce65e8dE1E22a",
+          "status": 0
+        }
+      }
+    },
+    {
+      "label": "S15: evaluate_atom (REL-UNSAT, U_EXHAUST attempt 2 -> UNCLEAR => CIRCUIT_UNSATISFIABLE, prunes P_UNUSED)",
+      "tx_hash": "0x673509232b8902f5ff03904d6884caeeda3fa57d09ed18bf325d9197a816eccd",
+      "explorer_url": "https://explorer-studio.genlayer.com/transactions/0x673509232b8902f5ff03904d6884caeeda3fa57d09ed18bf325d9197a816eccd",
+      "expected_failure": false,
+      "status_name": "FINALIZED",
+      "leader_execution_result": "SUCCESS",
+      "leader_error": null,
+      "eq_outputs_count": 1,
+      "votes": {
+        "0x22Eda431B7fBC1216baE3b077a78c973a8719c58": "agree",
+        "0x5744305308D62592B7De585e1999c4Ea51E03C29": "agree",
+        "0x6DC61b906F74F44612c5545b0b79486133B3556d": "agree",
+        "0x813890bC5bEDEB4F5437570962379F04738F18Cb": "idle",
+        "0xee46B9Dc4c860149B1d140840284e5374854e746": "idle"
+      },
+      "accepted_status_observed": "ACCEPTED",
+      "read_backs": {
+        "get_circuit(REL-UNSAT)": {
+          "active_frontier": [],
+          "atoms": {
+            "F_FAIL": {
+              "attempts": 1,
+              "evidence_sha256": "8cbcb44ca0e1ec96730a385a69aff0171e0c931236eaf7f44aa58eeb4f129b60",
+              "fetch_status": "OK",
+              "finalized": true,
+              "http_status": 200,
+              "kleene_value": 2,
+              "verdict": "CONTRADICTED"
+            },
+            "P_UNUSED": {
+              "attempts": 0,
+              "evidence_sha256": "",
+              "fetch_status": "PENDING",
+              "finalized": false,
+              "http_status": 0,
+              "kleene_value": 0,
+              "verdict": "UNEVALUATED"
+            },
+            "U_EXHAUST": {
+              "attempts": 2,
+              "evidence_sha256": "78257d51a7aee2c92425dbe69cb6d021ff8c7a1fd2aed0c17ca5b418ac89404d",
+              "fetch_status": "OK",
+              "finalized": false,
+              "http_status": 200,
+              "kleene_value": 0,
+              "verdict": "UNCLEAR"
+            }
+          },
+          "atoms_evaluated_count": 2,
+          "atoms_pruned_count": 1,
+          "beneficiary": "0xb592c0Ae1Fa87aE334a7776b59310E5ad2e695a5",
+          "circuit_id": "REL-UNSAT",
+          "created_at": 1795165255,
+          "deadline_ts": 1795167055,
+          "escrow_wei": 50,
+          "finalized_at": 1795165405,
+          "gates": {
+            "G_QUORUM": {
+              "children": [
+                "U_EXHAUST",
+                "F_FAIL",
+                "P_UNUSED"
+              ],
+              "kleene_value": 0,
+              "op": "K_OF_N",
+              "threshold": 2
+            }
+          },
+          "pruned_atoms": [
+            "P_UNUSED"
+          ],
+          "root_can_be_true": false,
+          "root_gate_id": "G_QUORUM",
+          "root_kleene_value": 0,
+          "spec_sha256": "16f1574c0ebf9f35ea0dc76fd26e6c70ab08b9f5285cec3c8ba63bdc188534e0",
+          "sponsor": "0x445Ff6bD81Cf71C14Fe5f133bE1Ce65e8dE1E22a",
+          "status": 5
+        }
+      }
+    },
+    {
+      "label": "G10: guard_eval_after_unsat (REL-UNSAT, P_UNUSED -> EXPECTED:CIRCUIT_ALREADY_FINAL)",
+      "tx_hash": "0x489f10f579104967e0234e22cc8b0b90c8b7e554a624d6d9cf671666cbe36850",
+      "explorer_url": "https://explorer-studio.genlayer.com/transactions/0x489f10f579104967e0234e22cc8b0b90c8b7e554a624d6d9cf671666cbe36850",
+      "expected_failure": true,
+      "status_name": "FINALIZED",
+      "leader_execution_result": "ERROR",
+      "leader_error": "EXPECTED:CIRCUIT_ALREADY_FINAL",
+      "eq_outputs_count": 0,
+      "votes": {
+        "0x19a02f95418A6c76091CDA37C4fc542CA82805c9": "agree",
+        "0x23A15A452F19D1B616276fedC5B8B51d69082959": "agree",
+        "0x5e880d85a70De78dDEf86236d57c42e73F560615": "idle",
+        "0xE74a9088aD4d6dBf3C8cABcC0B91072d2a8c8afa": "idle",
+        "0xee46B9Dc4c860149B1d140840284e5374854e746": "agree"
+      },
+      "accepted_status_observed": "ACCEPTED"
+    },
+    {
+      "label": "S16: create_circuit (REL-CANCEL, 40 wei)",
+      "tx_hash": "0x52ed7ed4ceef475a5339a9a65506fc815b00794c2b1d900f0efc500e95432780",
+      "explorer_url": "https://explorer-studio.genlayer.com/transactions/0x52ed7ed4ceef475a5339a9a65506fc815b00794c2b1d900f0efc500e95432780",
+      "expected_failure": false,
+      "status_name": "FINALIZED",
+      "leader_execution_result": "SUCCESS",
+      "leader_error": null,
+      "eq_outputs_count": 0,
+      "votes": {
+        "0x21e4F7ba6Ec0fbf70C019fbc0F9A797c3ed1F969": "idle",
+        "0x22Eda431B7fBC1216baE3b077a78c973a8719c58": "agree",
+        "0x23A15A452F19D1B616276fedC5B8B51d69082959": "agree",
+        "0x6fe9DE3d0adc76D6416A13CD8107aaE49A3CF98F": "agree",
+        "0x813890bC5bEDEB4F5437570962379F04738F18Cb": "idle"
+      },
+      "accepted_status_observed": "ACCEPTED",
+      "read_backs": {
+        "get_circuit(REL-CANCEL)": {
+          "active_frontier": [
+            "B_REV1",
+            "V_EXPLOIT"
+          ],
+          "atoms": {
+            "B_REV1": {
+              "attempts": 0,
+              "evidence_sha256": "",
+              "fetch_status": "PENDING",
+              "finalized": false,
+              "http_status": 0,
+              "kleene_value": 0,
+              "verdict": "UNEVALUATED"
+            },
+            "V_EXPLOIT": {
+              "attempts": 0,
+              "evidence_sha256": "",
+              "fetch_status": "PENDING",
+              "finalized": false,
+              "http_status": 0,
+              "kleene_value": 0,
+              "verdict": "UNEVALUATED"
+            }
+          },
+          "atoms_evaluated_count": 0,
+          "atoms_pruned_count": 0,
+          "beneficiary": "0xb592c0Ae1Fa87aE334a7776b59310E5ad2e695a5",
+          "circuit_id": "REL-CANCEL",
+          "created_at": 1795165490,
+          "deadline_ts": 1795166090,
+          "escrow_wei": 40,
+          "finalized_at": 0,
+          "gates": {
+            "G_NO_VETO": {
+              "children": [
+                "V_EXPLOIT"
+              ],
+              "kleene_value": 0,
+              "op": "NOT",
+              "threshold": 0
+            },
+            "G_ROOT": {
+              "children": [
+                "B_REV1",
+                "G_NO_VETO"
+              ],
+              "kleene_value": 0,
+              "op": "AND",
+              "threshold": 0
+            }
+          },
+          "pruned_atoms": [],
+          "root_can_be_true": true,
+          "root_gate_id": "G_ROOT",
+          "root_kleene_value": 0,
+          "spec_sha256": "32ba36c1388660d4208419b895434df73962cd2b70a2f388a8d719686b04cab6",
+          "sponsor": "0x445Ff6bD81Cf71C14Fe5f133bE1Ce65e8dE1E22a",
+          "status": 0
+        }
+      }
+    },
+    {
+      "label": "S17: cancel_circuit (REL-CANCEL -> CIRCUIT_CANCELLED before any evaluation)",
+      "tx_hash": "0x08b8c463faa0eed69facd1c9c069c3855d0daf67024a805855bb4b388334e3dc",
+      "explorer_url": "https://explorer-studio.genlayer.com/transactions/0x08b8c463faa0eed69facd1c9c069c3855d0daf67024a805855bb4b388334e3dc",
+      "expected_failure": false,
+      "status_name": "FINALIZED",
+      "leader_execution_result": "SUCCESS",
+      "leader_error": null,
+      "eq_outputs_count": 0,
+      "votes": {
+        "0x22Eda431B7fBC1216baE3b077a78c973a8719c58": "agree",
+        "0x4eeaD269a60bB89c98a23c1BCd0bd101CafD90E0": "agree",
+        "0x813890bC5bEDEB4F5437570962379F04738F18Cb": "idle",
+        "0x88E148Da14d45c5a5DD2DB25E776eBCBCe0Df539": "idle",
+        "0xe358f855C96d8E7243836cf986eb037175B9467e": "agree"
+      },
+      "accepted_status_observed": "ACCEPTED",
+      "read_backs": {
+        "get_circuit(REL-CANCEL)": {
+          "active_frontier": [
+            "B_REV1",
+            "V_EXPLOIT"
+          ],
+          "atoms": {
+            "B_REV1": {
+              "attempts": 0,
+              "evidence_sha256": "",
+              "fetch_status": "PENDING",
+              "finalized": false,
+              "http_status": 0,
+              "kleene_value": 0,
+              "verdict": "UNEVALUATED"
+            },
+            "V_EXPLOIT": {
+              "attempts": 0,
+              "evidence_sha256": "",
+              "fetch_status": "PENDING",
+              "finalized": false,
+              "http_status": 0,
+              "kleene_value": 0,
+              "verdict": "UNEVALUATED"
+            }
+          },
+          "atoms_evaluated_count": 0,
+          "atoms_pruned_count": 0,
+          "beneficiary": "0xb592c0Ae1Fa87aE334a7776b59310E5ad2e695a5",
+          "circuit_id": "REL-CANCEL",
+          "created_at": 1795165490,
+          "deadline_ts": 1795166090,
+          "escrow_wei": 40,
+          "finalized_at": 1795165529,
+          "gates": {
+            "G_NO_VETO": {
+              "children": [
+                "V_EXPLOIT"
+              ],
+              "kleene_value": 0,
+              "op": "NOT",
+              "threshold": 0
+            },
+            "G_ROOT": {
+              "children": [
+                "B_REV1",
+                "G_NO_VETO"
+              ],
+              "kleene_value": 0,
+              "op": "AND",
+              "threshold": 0
+            }
+          },
+          "pruned_atoms": [],
+          "root_can_be_true": true,
+          "root_gate_id": "G_ROOT",
+          "root_kleene_value": 0,
+          "spec_sha256": "32ba36c1388660d4208419b895434df73962cd2b70a2f388a8d719686b04cab6",
+          "sponsor": "0x445Ff6bD81Cf71C14Fe5f133bE1Ce65e8dE1E22a",
+          "status": 4
+        }
+      }
+    },
+    {
+      "label": "G7: guard_cyclic_circuit (G1->G2->G1 -> EXPECTED:CIRCUIT_CYCLE_DETECTED)",
+      "tx_hash": "0xa255b88f3f8d42b16b5aee7f7d01c69beebba16357d4c8ce6dfdd0eb9a19be6b",
+      "explorer_url": "https://explorer-studio.genlayer.com/transactions/0xa255b88f3f8d42b16b5aee7f7d01c69beebba16357d4c8ce6dfdd0eb9a19be6b",
+      "expected_failure": true,
+      "status_name": "FINALIZED",
+      "leader_execution_result": "ERROR",
+      "leader_error": "EXPECTED:CIRCUIT_CYCLE_DETECTED",
+      "eq_outputs_count": 0,
+      "votes": {
+        "0x240d2d7c8DF220110c26cfFFC532479319Cca0dC": "idle",
+        "0x4eeaD269a60bB89c98a23c1BCd0bd101CafD90E0": "idle",
+        "0x725Ab89db6A9DD886Ba71Bc5E63a01070C325bE3": "agree",
+        "0x88E148Da14d45c5a5DD2DB25E776eBCBCe0Df539": "agree",
+        "0xe358f855C96d8E7243836cf986eb037175B9467e": "agree"
+      },
+      "accepted_status_observed": "ACCEPTED"
+    },
+    {
+      "label": "G8: guard_unpinned_branch_url (/main/ -> EXPECTED:UNPINNED_GITHUB_URL)",
+      "tx_hash": "0x4611d9b44cafa90552ba6b17d6f7c7670b7ad206d3f9ecff0873e9d3237a29a7",
+      "explorer_url": "https://explorer-studio.genlayer.com/transactions/0x4611d9b44cafa90552ba6b17d6f7c7670b7ad206d3f9ecff0873e9d3237a29a7",
+      "expected_failure": true,
+      "status_name": "FINALIZED",
+      "leader_execution_result": "ERROR",
+      "leader_error": "EXPECTED:UNPINNED_GITHUB_URL",
+      "eq_outputs_count": 0,
+      "votes": {
+        "0x23A15A452F19D1B616276fedC5B8B51d69082959": "idle",
+        "0x62718FbDf0509A398aA525C152D60c1F7A9d33D3": "idle",
+        "0x813890bC5bEDEB4F5437570962379F04738F18Cb": "agree",
+        "0x88E148Da14d45c5a5DD2DB25E776eBCBCe0Df539": "agree",
+        "0xee46B9Dc4c860149B1d140840284e5374854e746": "agree"
+      },
+      "accepted_status_observed": "ACCEPTED"
+    },
+    {
+      "label": "G9: guard_replay_finalized_circuit (REL-PASS, A_AUDIT -> EXPECTED:CIRCUIT_ALREADY_FINAL)",
+      "tx_hash": "0xb531d3ba84fd2f94d7dc0a3eb88162e7fd63cb6680a82ae1cac2b51ade475328",
+      "explorer_url": "https://explorer-studio.genlayer.com/transactions/0xb531d3ba84fd2f94d7dc0a3eb88162e7fd63cb6680a82ae1cac2b51ade475328",
+      "expected_failure": true,
+      "status_name": "FINALIZED",
+      "leader_execution_result": "ERROR",
+      "leader_error": "EXPECTED:CIRCUIT_ALREADY_FINAL",
+      "eq_outputs_count": 0,
+      "votes": {
+        "0x19a02f95418A6c76091CDA37C4fc542CA82805c9": "agree",
+        "0x1B490819e040562a5fb40CD64B1c70D4419c38d1": "idle",
+        "0x23A15A452F19D1B616276fedC5B8B51d69082959": "agree",
+        "0x6DC61b906F74F44612c5545b0b79486133B3556d": "agree",
+        "0xee46B9Dc4c860149B1d140840284e5374854e746": "idle"
+      },
+      "accepted_status_observed": "ACCEPTED"
+    },
+    {
+      "label": "S18: expire_circuit (REL-FAILCLOSED -> permissionless fail-closed refund)",
+      "tx_hash": "0x600c731447aadca46e86cdddd3237cb1f58fb300bc07dfc41f2274b436ab24b2",
+      "explorer_url": "https://explorer-studio.genlayer.com/transactions/0x600c731447aadca46e86cdddd3237cb1f58fb300bc07dfc41f2274b436ab24b2",
+      "expected_failure": false,
+      "status_name": "FINALIZED",
+      "leader_execution_result": "SUCCESS",
+      "leader_error": null,
+      "eq_outputs_count": 0,
+      "votes": {
+        "0x1B490819e040562a5fb40CD64B1c70D4419c38d1": "idle",
+        "0x21e4F7ba6Ec0fbf70C019fbc0F9A797c3ed1F969": "idle",
+        "0x5744305308D62592B7De585e1999c4Ea51E03C29": "agree",
+        "0x62718FbDf0509A398aA525C152D60c1F7A9d33D3": "agree",
+        "0x6DC61b906F74F44612c5545b0b79486133B3556d": "agree"
+      },
+      "accepted_status_observed": "ACCEPTED",
+      "read_backs": {
+        "get_circuit(REL-FAILCLOSED)": {
+          "active_frontier": [
+            "V_EXPLOIT"
+          ],
+          "atoms": {
+            "B_REV1": {
+              "attempts": 1,
+              "evidence_sha256": "74d6cbb0ef112b0ad640ff9edd8d077e6d02c066310bb294a884e00fa4ecd6b4",
+              "fetch_status": "OK",
+              "finalized": true,
+              "http_status": 200,
+              "kleene_value": 1,
+              "verdict": "HOLDS"
+            },
+            "V_EXPLOIT": {
+              "attempts": 1,
+              "evidence_sha256": "78257d51a7aee2c92425dbe69cb6d021ff8c7a1fd2aed0c17ca5b418ac89404d",
+              "fetch_status": "OK",
+              "finalized": false,
+              "http_status": 200,
+              "kleene_value": 0,
+              "verdict": "UNCLEAR"
+            }
+          },
+          "atoms_evaluated_count": 2,
+          "atoms_pruned_count": 0,
+          "beneficiary": "0xb592c0Ae1Fa87aE334a7776b59310E5ad2e695a5",
+          "circuit_id": "REL-FAILCLOSED",
+          "created_at": 1795165110,
+          "deadline_ts": 1795165260,
+          "escrow_wei": 60,
+          "finalized_at": 1795165688,
+          "gates": {
+            "G_NO_VETO": {
+              "children": [
+                "V_EXPLOIT"
+              ],
+              "kleene_value": 0,
+              "op": "NOT",
+              "threshold": 0
+            },
+            "G_ROOT": {
+              "children": [
+                "B_REV1",
+                "G_NO_VETO"
+              ],
+              "kleene_value": 0,
+              "op": "AND",
+              "threshold": 0
+            }
+          },
+          "pruned_atoms": [],
+          "root_can_be_true": true,
+          "root_gate_id": "G_ROOT",
+          "root_kleene_value": 0,
+          "spec_sha256": "32ba36c1388660d4208419b895434df73962cd2b70a2f388a8d719686b04cab6",
+          "sponsor": "0x445Ff6bD81Cf71C14Fe5f133bE1Ce65e8dE1E22a",
           "status": 3
         }
       }
     },
     {
-      "label": "S13: withdraw (Sponsor pulls 80 + 60 = 140 wei refunds)",
-      "tx_hash": "0x050a6002f38c5d6cbe08634991b1ec109f5ffa1c75427865e45825cf718ea048",
-      "explorer_url": "https://explorer-studio.genlayer.com/transactions/0x050a6002f38c5d6cbe08634991b1ec109f5ffa1c75427865e45825cf718ea048",
+      "label": "S19: withdraw (Sponsor pulls 80 + 60 + 50 + 40 = 230 wei refunds)",
+      "tx_hash": "0xccfa7e56fac1aba1a67a312f0ee13ea87090f2ddf121a956cd89eac223753542",
+      "explorer_url": "https://explorer-studio.genlayer.com/transactions/0xccfa7e56fac1aba1a67a312f0ee13ea87090f2ddf121a956cd89eac223753542",
       "expected_failure": false,
       "status_name": "FINALIZED",
       "leader_execution_result": "SUCCESS",
       "leader_error": null,
+      "eq_outputs_count": 0,
       "votes": {
-        "0x23A15A452F19D1B616276fedC5B8B51d69082959": "agree",
-        "0x62718FbDf0509A398aA525C152D60c1F7A9d33D3": "agree",
-        "0x6DC61b906F74F44612c5545b0b79486133B3556d": "idle",
-        "0xe358f855C96d8E7243836cf986eb037175B9467e": "agree",
-        "0xee46B9Dc4c860149B1d140840284e5374854e746": "idle"
+        "0x19a02f95418A6c76091CDA37C4fc542CA82805c9": "agree",
+        "0x240d2d7c8DF220110c26cfFFC532479319Cca0dC": "idle",
+        "0x5744305308D62592B7De585e1999c4Ea51E03C29": "idle",
+        "0x5e880d85a70De78dDEf86236d57c42e73F560615": "agree",
+        "0x813890bC5bEDEB4F5437570962379F04738F18Cb": "agree"
       },
       "accepted_status_observed": "ACCEPTED",
       "read_backs": {
         "get_accounting_state": {
-          "circuit_count": 3,
+          "circuit_count": 5,
           "conservation_ok": true,
-          "total_deposited_wei": 240,
+          "total_deposited_wei": 330,
           "total_locked_wei": 0,
           "total_withdrawable_wei": 0,
-          "total_withdrawn_wei": 240
-        }
+          "total_withdrawn_wei": 330
+        },
+        "sponsor_native_balance_before": 999999999999999999650,
+        "sponsor_native_balance_after": 999999999999999999650
       }
     }
   ]
