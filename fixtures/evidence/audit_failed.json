@@ -1,9 +1,0 @@
-{
-  "release": "v3.4.0",
-  "document_type": "automated_security_audit",
-  "auditor": "SentinelCheck CI",
-  "audit_status": "FAILED",
-  "unresolved_high_severity_findings": 2,
-  "release_approved": false,
-  "summary": "Release v3.4.0 FAILED the automated security audit with 2 unresolved high-severity findings and is NOT approved for deployment."
-}

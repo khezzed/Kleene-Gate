@@ -1,9 +1,0 @@
-{
-  "release": "v3.4.0",
-  "document_type": "independent_code_review",
-  "reviewer": "Beta Protocol Auditors",
-  "review_status": "APPROVED",
-  "access_control_verified": true,
-  "accounting_invariants_verified": true,
-  "summary": "Independent reviewer Beta formally APPROVED release v3.4.0 after verifying all access-control and accounting invariants held."
-}

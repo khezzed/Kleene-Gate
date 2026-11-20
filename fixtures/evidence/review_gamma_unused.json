@@ -1,7 +1,0 @@
-{
-  "release": "v3.4.0",
-  "document_type": "independent_code_review",
-  "reviewer": "Gamma Assurance Lab",
-  "review_status": "APPROVED",
-  "summary": "Independent reviewer Gamma formally APPROVED release v3.4.0 after verifying deterministic serialization and gas bounds."
-}

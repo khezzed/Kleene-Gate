@@ -1,9 +1,0 @@
-{
-  "release": "v3.4.1",
-  "document_type": "emergency_security_bulletin",
-  "issuer": "Incident Response Board",
-  "active_key_compromise": true,
-  "confirmed_critical_exploit": true,
-  "halt_advisory_active": true,
-  "summary": "EMERGENCY ADVISORY: Release v3.4.1 has a confirmed active signing-key compromise and critical exploit; immediate deployment halt is in effect."
-}

@@ -6,6 +6,7 @@ from kleene_gate import (
     CIRCUIT_DECIDED_FALSE,
     CIRCUIT_DECIDED_TRUE,
     CIRCUIT_EXPIRED_REFUNDED,
+    CIRCUIT_UNSATISFIABLE,
     FETCH_ACCESS_DENIED,
     FETCH_HTTP_ERROR,
     FETCH_INVALID_UTF8,
@@ -223,17 +224,23 @@ def test_multi_circuit_conservation_invariant_across_all_terminal_states(env):
     t0 = 1763500000
     env.set_time(t0)
 
-    # Create 4 circuits: 100 + 200 + 300 + 400 = 1000 wei deposited
-    for cid, amt, dur in [("C-TRUE", 100, 300), ("C-FALSE", 200, 300), ("C-EXP", 300, 60), ("C-CAN", 400, 300)]:
+    # Create 5 circuits covering ALL 5 terminal states: 100+200+300+400+50 = 1050 wei
+    for cid, amt, dur in [
+        ("C-TRUE", 100, 300),
+        ("C-FALSE", 200, 300),
+        ("C-EXP", 300, 60),
+        ("C-CAN", 400, 300),
+        ("C-UNSAT", 50, 300),
+    ]:
         env.set_caller(SPONSOR, value=amt)
         c.create_circuit(cid, BENEFICIARY, u256(dur), spec_str)
-    check_conservation(1000, 1000, 0, 0)
+    check_conservation(1050, 1050, 0, 0)
 
     # 1. C-CAN cancelled before evaluation -> Sponsor +400 withdrawable
     env.set_caller(SPONSOR, value=0)
     r_can = c.cancel_circuit("C-CAN")
     assert r_can["circuit_status"] == int(CIRCUIT_CANCELLED)
-    check_conservation(1000, 600, 400, 0)
+    check_conservation(1050, 650, 400, 0)
 
     # 2. C-TRUE passes both atoms -> Beneficiary +100 withdrawable
     env.llm_handler = lambda p: {"verdict": "HOLDS", "quote": "Release passed automated unit tests cleanly"}
@@ -241,30 +248,37 @@ def test_multi_circuit_conservation_invariant_across_all_terminal_states(env):
     c.evaluate_atom("C-TRUE", "A1")
     r_t = c.evaluate_atom("C-TRUE", "A2")
     assert r_t["circuit_status"] == int(CIRCUIT_DECIDED_TRUE)
-    check_conservation(1000, 500, 500, 0)
+    check_conservation(1050, 550, 500, 0)
 
     # 3. C-FALSE fails on A1 -> short-circuits FALSE -> Sponsor +200 withdrawable (total 600)
     env.llm_handler = lambda p: {"verdict": "CONTRADICTED", "quote": "Release passed automated unit tests cleanly"}
     r_f = c.evaluate_atom("C-FALSE", "A1")
     assert r_f["circuit_status"] == int(CIRCUIT_DECIDED_FALSE)
-    check_conservation(1000, 300, 700, 0)
+    check_conservation(1050, 350, 700, 0)
 
-    # 4. C-EXP expires past deadline -> Sponsor +300 withdrawable (total 900)
+    # 4. C-UNSAT exhausts A1 with UNCLEAR x2 -> immediate CIRCUIT_UNSATISFIABLE -> Sponsor +50 (total 650)
+    env.llm_handler = lambda p: {"verdict": "UNCLEAR", "quote": ""}
+    c.evaluate_atom("C-UNSAT", "A1")
+    r_u = c.evaluate_atom("C-UNSAT", "A1")
+    assert r_u["circuit_status"] == int(CIRCUIT_UNSATISFIABLE)
+    check_conservation(1050, 300, 750, 0)
+
+    # 5. C-EXP expires past deadline -> Sponsor +300 withdrawable (total 950)
     env.set_time(t0 + 61)
     r_e = c.expire_circuit("C-EXP")
     assert r_e["circuit_status"] == int(CIRCUIT_EXPIRED_REFUNDED)
-    check_conservation(1000, 0, 1000, 0)
+    check_conservation(1050, 0, 1050, 0)
 
-    # 5. Beneficiary withdraws 100, double-withdraw reverts
+    # 6. Beneficiary withdraws 100, double-withdraw reverts
     env.set_caller(BENEFICIARY, value=0)
     assert c.withdraw() == u256(100)
-    check_conservation(1000, 0, 900, 100)
+    check_conservation(1050, 0, 950, 100)
     with pytest.raises(UserError, match="EXPECTED:NOTHING_TO_WITHDRAW"):
         c.withdraw()
 
-    # 6. Sponsor withdraws 900, final balance 100% drained & conserved
+    # 7. Sponsor withdraws 950, final balance 100% drained & conserved
     env.set_caller(SPONSOR, value=0)
-    assert c.withdraw() == u256(900)
-    check_conservation(1000, 0, 0, 1000)
+    assert c.withdraw() == u256(950)
+    check_conservation(1050, 0, 0, 1050)
     with pytest.raises(UserError, match="EXPECTED:NOTHING_TO_WITHDRAW"):
         c.withdraw()
